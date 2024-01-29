@@ -9132,7 +9132,7 @@
 		)
 		(uuid "4980cdd8-63aa-47ec-8b1a-82cb176529bb")
 	)
-	(text "Make sure C6 is close\nto pin 44 of RP2040"
+	(text "Make sure C15 is close\nto pin 44 of RP2040"
 		(exclude_from_sim no)
 		(at 255.27 123.952 0)
 		(effects
@@ -9143,7 +9143,7 @@
 		)
 		(uuid "7c083ad1-5207-413f-994d-5a2dfae3b1ce")
 	)
-	(text "Make sure R20 and R21\nare close to RP2040"
+	(text "Make sure R30 and R31\nare close to RP2040"
 		(exclude_from_sim no)
 		(at 259.588 137.16 0)
 		(effects
@@ -9154,7 +9154,7 @@
 		)
 		(uuid "a1be096c-95a5-4554-a4ce-27aabad0843c")
 	)
-	(text "Make sure C3 is close\nto pin 45 of RP2040"
+	(text "Make sure C13 is close\nto pin 45 of RP2040"
 		(exclude_from_sim no)
 		(at 189.23 126.238 0)
 		(effects
@@ -11615,6 +11615,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 234.315 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 234.315 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0e14a4d7-812e-4ea4-b17c-7769b4ba9738")
 		)
@@ -11674,6 +11692,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 40.64 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25790"
+			(at 40.64 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 40.64 105.41 0)
 			(effects
 				(font
@@ -11742,6 +11778,24 @@
 			)
 		)
 		(property "Description" "Schottky diode array 2 pair Com C, SOT-363"
+			(at 52.07 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5240639"
+			(at 52.07 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 52.07 215.9 0)
 			(effects
 				(font
@@ -11837,6 +11891,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 52.07 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b82")
 		)
@@ -11917,6 +11989,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 279.4 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 279.4 226.06 0)
 			(effects
 				(font
@@ -12059,6 +12140,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 316.23 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 316.23 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "54dfbfb7-296c-444d-8783-9a1d596dace0")
 		)
@@ -12120,6 +12219,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 281.94 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 281.94 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 281.94 106.68 0)
 			(effects
 				(font
@@ -12263,6 +12380,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C326543"
+			(at 337.185 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2ce04791-266a-4651-9048-745f963a6230")
 		)
@@ -12330,6 +12456,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25790"
+			(at 40.64 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 40.64 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c14a9dcd-1ac0-42a3-997a-500819e26f19")
 		)
@@ -12389,6 +12533,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 264.795 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C97521"
+			(at 264.795 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 264.795 59.055 0)
 			(effects
 				(font
@@ -12476,6 +12638,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 185.42 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15850"
+			(at 185.42 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 185.42 60.96 0)
 			(effects
 				(font
@@ -12616,6 +12796,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25790"
+			(at 40.64 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 40.64 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f64f2682-4688-40a1-a77a-cf726f2d7808")
 		)
@@ -12677,6 +12875,24 @@
 			)
 		)
 		(property "Description" "Schottky diode array 2 pair Com C, SOT-363"
+			(at 52.07 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5240639"
+			(at 52.07 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 52.07 101.6 0)
 			(effects
 				(font
@@ -12762,6 +12978,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 222.25 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2040"
+			(at 222.25 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 222.25 185.42 0)
 			(effects
 				(font
@@ -13004,29 +13238,47 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "31cfb35b-016e-439f-982e-4902777e6820")
+		(property "LCSC" "C5240639"
+			(at 52.07 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "3"
-			(uuid "db3f1748-bbeb-450f-92cc-863439502fcc")
+			(uuid "31cfb35b-016e-439f-982e-4902777e6821")
+		)
+		(pin "3"
+			(uuid "db3f1748-bbeb-450f-92cc-863439502fcd")
 		)
 		(pin "6"
-			(uuid "6aa12795-c660-4aba-9aa1-2419f53d72f6")
+			(uuid "6aa12795-c660-4aba-9aa1-2419f53d72f7")
 		)
 		(pin "6"
-			(uuid "749b93cb-9e1f-4f05-8790-ae73eef2846b")
+			(uuid "749b93cb-9e1f-4f05-8790-ae73eef2846c")
 		)
 		(pin "1"
-			(uuid "b2b547bd-635c-4ffb-8a05-a6d2506900d3")
+			(uuid "b2b547bd-635c-4ffb-8a05-a6d2506900d4")
 		)
 		(pin "5"
-			(uuid "b7565ee3-b33a-4a98-aef6-b9b654a050cc")
+			(uuid "b7565ee3-b33a-4a98-aef6-b9b654a050cd")
 		)
 		(pin "4"
-			(uuid "c9c28164-f793-43b7-b5ae-f2c865029315")
+			(uuid "c9c28164-f793-43b7-b5ae-f2c865029316")
 		)
 		(pin "2"
-			(uuid "8cf51fe1-859f-4c30-82b6-c5799293d076")
+			(uuid "8cf51fe1-859f-4c30-82b6-c5799293d077")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -13083,6 +13335,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 247.65 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 247.65 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 247.65 121.92 0)
 			(effects
 				(font
@@ -13152,6 +13422,24 @@
 			)
 		)
 		(property "Description" "Schottky diode array 2 pair Com C, SOT-363"
+			(at 119.38 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5240639"
+			(at 119.38 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 119.38 107.95 0)
 			(effects
 				(font
@@ -13375,6 +13663,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25790"
+			(at 40.64 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 40.64 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f1cbe271-65d5-41ab-af24-d664463c6301")
 		)
@@ -13507,6 +13813,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25790"
+			(at 40.64 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 40.64 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "70d208b9-d74a-4976-9504-9ce2c1baf38d")
 		)
@@ -13568,6 +13892,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 215.9 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15850"
+			(at 215.9 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 215.9 36.83 0)
 			(effects
 				(font
@@ -13643,6 +13985,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25790"
+			(at 40.64 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 40.64 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "11e0098d-9698-4bb5-b989-a33dcc5be717")
 		)
@@ -13702,6 +14062,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 107.95 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25756"
+			(at 107.95 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 107.95 142.24 0)
 			(effects
 				(font
@@ -13844,26 +14222,44 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 52.07 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "324e9dc3-f6d3-49bd-b22f-d6efc5644519")
 		)
 		(pin "3"
-			(uuid "fc451060-f192-480a-8cf3-9847426d442e")
+			(uuid "fc451060-f192-480a-8cf3-9847426d442f")
 		)
 		(pin "5"
-			(uuid "3f26acbc-4932-4877-b9d1-f890471acc22")
+			(uuid "3f26acbc-4932-4877-b9d1-f890471acc23")
 		)
 		(pin "6"
-			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f13")
+			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f14")
 		)
 		(pin "3"
-			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714c9")
+			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714ca")
 		)
 		(pin "4"
-			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3781")
+			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3782")
 		)
 		(pin "1"
-			(uuid "74b8ebb7-f467-4801-be57-cab01b028ae8")
+			(uuid "74b8ebb7-f467-4801-be57-cab01b028ae9")
 		)
 		(pin "6"
 			(uuid "282b9cae-3b94-4446-9096-4af0118631ac")
@@ -13947,7 +14343,7 @@
 		(at 269.24 220.98 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "4a04d87d-dabd-4be8-b1c4-a9f158d74ea5")
@@ -13989,6 +14385,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 269.24 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 269.24 220.98 0)
 			(effects
 				(font
@@ -14055,6 +14460,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 193.04 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 193.04 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 193.04 121.92 0)
 			(effects
 				(font
@@ -14130,6 +14553,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25790"
+			(at 40.64 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 40.64 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2a4bf6c9-8a14-4c2c-8190-3a70d1aa577e")
 		)
@@ -14189,6 +14630,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 40.64 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25790"
+			(at 40.64 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 40.64 128.27 0)
 			(effects
 				(font
@@ -14266,29 +14725,47 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "31cfb35b-016e-439f-982e-4902777e6820")
+		(property "LCSC" "C5240639"
+			(at 52.07 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "3"
-			(uuid "db3f1748-bbeb-450f-92cc-863439502fcc")
+			(uuid "31cfb35b-016e-439f-982e-4902777e6822")
+		)
+		(pin "3"
+			(uuid "db3f1748-bbeb-450f-92cc-863439502fce")
 		)
 		(pin "6"
-			(uuid "6aa12795-c660-4aba-9aa1-2419f53d72f6")
+			(uuid "6aa12795-c660-4aba-9aa1-2419f53d72f8")
 		)
 		(pin "6"
-			(uuid "749b93cb-9e1f-4f05-8790-ae73eef2846b")
+			(uuid "749b93cb-9e1f-4f05-8790-ae73eef2846d")
 		)
 		(pin "1"
-			(uuid "b2b547bd-635c-4ffb-8a05-a6d2506900d3")
+			(uuid "b2b547bd-635c-4ffb-8a05-a6d2506900d5")
 		)
 		(pin "5"
-			(uuid "b7565ee3-b33a-4a98-aef6-b9b654a050cc")
+			(uuid "b7565ee3-b33a-4a98-aef6-b9b654a050ce")
 		)
 		(pin "4"
-			(uuid "c9c28164-f793-43b7-b5ae-f2c865029315")
+			(uuid "c9c28164-f793-43b7-b5ae-f2c865029317")
 		)
 		(pin "2"
-			(uuid "8cf51fe1-859f-4c30-82b6-c5799293d076")
+			(uuid "8cf51fe1-859f-4c30-82b6-c5799293d078")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -14345,6 +14822,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 321.945 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1557"
+			(at 321.945 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 321.945 45.72 0)
 			(effects
 				(font
@@ -14420,6 +14915,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25156"
+			(at 269.24 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 269.24 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6b4e030f-5bf6-4491-90ce-f91caf41aa5e")
 		)
@@ -14479,6 +14992,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 40.64 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25790"
+			(at 40.64 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 40.64 97.79 0)
 			(effects
 				(font
@@ -14554,6 +15085,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25790"
+			(at 40.64 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 40.64 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3dfba5f5-e1ae-402d-bdc2-0fa21225450b")
 		)
@@ -14615,6 +15164,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 193.04 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 193.04 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 193.04 106.68 0)
 			(effects
 				(font
@@ -14821,6 +15388,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25790"
+			(at 40.64 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 40.64 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ac83b230-8019-4dd3-9f9a-20e275d1890c")
 		)
@@ -14880,6 +15465,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 40.64 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25790"
+			(at 40.64 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 40.64 113.03 0)
 			(effects
 				(font
@@ -14957,29 +15560,47 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "31cfb35b-016e-439f-982e-4902777e6820")
+		(property "LCSC" "C5240639"
+			(at 52.07 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "3"
-			(uuid "db3f1748-bbeb-450f-92cc-863439502fcc")
+			(uuid "31cfb35b-016e-439f-982e-4902777e6823")
+		)
+		(pin "3"
+			(uuid "db3f1748-bbeb-450f-92cc-863439502fcf")
 		)
 		(pin "6"
-			(uuid "6aa12795-c660-4aba-9aa1-2419f53d72f6")
+			(uuid "6aa12795-c660-4aba-9aa1-2419f53d72f9")
 		)
 		(pin "6"
-			(uuid "749b93cb-9e1f-4f05-8790-ae73eef2846b")
+			(uuid "749b93cb-9e1f-4f05-8790-ae73eef2846e")
 		)
 		(pin "1"
-			(uuid "b2b547bd-635c-4ffb-8a05-a6d2506900d3")
+			(uuid "b2b547bd-635c-4ffb-8a05-a6d2506900d6")
 		)
 		(pin "5"
-			(uuid "b7565ee3-b33a-4a98-aef6-b9b654a050cc")
+			(uuid "b7565ee3-b33a-4a98-aef6-b9b654a050cf")
 		)
 		(pin "4"
-			(uuid "c9c28164-f793-43b7-b5ae-f2c865029315")
+			(uuid "c9c28164-f793-43b7-b5ae-f2c865029318")
 		)
 		(pin "2"
-			(uuid "8cf51fe1-859f-4c30-82b6-c5799293d076")
+			(uuid "8cf51fe1-859f-4c30-82b6-c5799293d079")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -15036,6 +15657,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 293.37 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 293.37 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 293.37 106.68 0)
 			(effects
 				(font
@@ -15103,6 +15742,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 354.965 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 354.965 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 354.965 45.72 0)
 			(effects
 				(font
@@ -15180,6 +15837,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 247.65 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 247.65 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6216f113-abd2-425b-b7af-352d1c2b7ab0")
 		)
@@ -15249,23 +15924,41 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 119.38 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 119.38 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b84")
 		)
 		(pin "3"
-			(uuid "fc451060-f192-480a-8cf3-9847426d4430")
+			(uuid "fc451060-f192-480a-8cf3-9847426d4431")
 		)
 		(pin "5"
-			(uuid "3f26acbc-4932-4877-b9d1-f890471acc24")
+			(uuid "3f26acbc-4932-4877-b9d1-f890471acc25")
 		)
 		(pin "6"
 			(uuid "c6d645ab-bdc7-4ab9-bc05-a4667d24bc8b")
 		)
 		(pin "3"
-			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714cb")
+			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714cc")
 		)
 		(pin "4"
-			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3783")
+			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3784")
 		)
 		(pin "1"
 			(uuid "58654c0d-7c99-4f27-bb7b-d4a8a0179b05")
@@ -15336,29 +16029,47 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 52.07 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "aa69df2b-c5cf-4eba-b6e0-cf5cdcf831e8")
 		)
 		(pin "3"
-			(uuid "db3f1748-bbeb-450f-92cc-863439502fce")
+			(uuid "db3f1748-bbeb-450f-92cc-863439502fd0")
 		)
 		(pin "6"
-			(uuid "6aa12795-c660-4aba-9aa1-2419f53d72f8")
+			(uuid "6aa12795-c660-4aba-9aa1-2419f53d72fa")
 		)
 		(pin "6"
-			(uuid "749b93cb-9e1f-4f05-8790-ae73eef2846d")
+			(uuid "749b93cb-9e1f-4f05-8790-ae73eef2846f")
 		)
 		(pin "1"
-			(uuid "b2b547bd-635c-4ffb-8a05-a6d2506900d5")
+			(uuid "b2b547bd-635c-4ffb-8a05-a6d2506900d7")
 		)
 		(pin "5"
-			(uuid "b7565ee3-b33a-4a98-aef6-b9b654a050ce")
+			(uuid "b7565ee3-b33a-4a98-aef6-b9b654a050d0")
 		)
 		(pin "4"
 			(uuid "3fec9ec2-35aa-4edc-98f1-66f1d5ef46fc")
 		)
 		(pin "2"
-			(uuid "8cf51fe1-859f-4c30-82b6-c5799293d078")
+			(uuid "8cf51fe1-859f-4c30-82b6-c5799293d07a")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -15488,29 +16199,47 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 119.38 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 119.38 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b84")
+			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b85")
 		)
 		(pin "3"
-			(uuid "fc451060-f192-480a-8cf3-9847426d4430")
+			(uuid "fc451060-f192-480a-8cf3-9847426d4432")
 		)
 		(pin "5"
-			(uuid "3f26acbc-4932-4877-b9d1-f890471acc24")
+			(uuid "3f26acbc-4932-4877-b9d1-f890471acc26")
 		)
 		(pin "6"
-			(uuid "1b3c9fed-d670-4e41-9cda-8267b1a59407")
+			(uuid "1b3c9fed-d670-4e41-9cda-8267b1a59408")
 		)
 		(pin "3"
-			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714cb")
+			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714cd")
 		)
 		(pin "4"
-			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3783")
+			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3785")
 		)
 		(pin "1"
-			(uuid "7096151c-6647-4df4-9530-1f8de8a77573")
+			(uuid "7096151c-6647-4df4-9530-1f8de8a77574")
 		)
 		(pin "6"
-			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c4269fb")
+			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c4269fc")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -15567,6 +16296,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 304.8 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 304.8 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 304.8 106.68 0)
 			(effects
 				(font
@@ -15642,6 +16389,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25156"
+			(at 269.24 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 269.24 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f1e9d72a-7233-4979-b7cd-942f01159755")
 		)
@@ -15701,6 +16466,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 107.95 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25756"
+			(at 107.95 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 107.95 119.38 0)
 			(effects
 				(font
@@ -15778,26 +16561,44 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 52.07 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a277dd96-af11-424f-abc7-6643950458e0")
 		)
 		(pin "3"
-			(uuid "fc451060-f192-480a-8cf3-9847426d442e")
+			(uuid "fc451060-f192-480a-8cf3-9847426d4433")
 		)
 		(pin "5"
-			(uuid "3f26acbc-4932-4877-b9d1-f890471acc22")
+			(uuid "3f26acbc-4932-4877-b9d1-f890471acc27")
 		)
 		(pin "6"
-			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f13")
+			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f15")
 		)
 		(pin "3"
-			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714c9")
+			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714ce")
 		)
 		(pin "4"
-			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3781")
+			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3786")
 		)
 		(pin "1"
-			(uuid "74b8ebb7-f467-4801-be57-cab01b028ae8")
+			(uuid "74b8ebb7-f467-4801-be57-cab01b028aea")
 		)
 		(pin "6"
 			(uuid "2166f33e-003c-41bb-8d60-c10a2077e8b4")
@@ -15855,6 +16656,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 107.95 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25756"
+			(at 107.95 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 107.95 104.14 0)
 			(effects
 				(font
@@ -15995,6 +16814,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25790"
+			(at 40.64 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 40.64 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a2434308-1ce5-4dee-b317-5b94078fe462")
 		)
@@ -16054,6 +16891,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 107.95 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25756"
+			(at 107.95 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 107.95 127 0)
 			(effects
 				(font
@@ -16131,6 +16986,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 181.61 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 181.61 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dfbbeeac-ffdd-4b95-9290-7043517bd671")
 		)
@@ -16200,26 +17073,44 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 52.07 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b83")
 		)
 		(pin "3"
-			(uuid "fc451060-f192-480a-8cf3-9847426d442f")
+			(uuid "fc451060-f192-480a-8cf3-9847426d4434")
 		)
 		(pin "5"
-			(uuid "3f26acbc-4932-4877-b9d1-f890471acc23")
+			(uuid "3f26acbc-4932-4877-b9d1-f890471acc28")
 		)
 		(pin "6"
-			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f14")
+			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f16")
 		)
 		(pin "3"
-			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714ca")
+			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714cf")
 		)
 		(pin "4"
-			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3782")
+			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3787")
 		)
 		(pin "1"
-			(uuid "74b8ebb7-f467-4801-be57-cab01b028ae9")
+			(uuid "74b8ebb7-f467-4801-be57-cab01b028aeb")
 		)
 		(pin "6"
 			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c4269fa")
@@ -16287,29 +17178,47 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 52.07 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b83")
+			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b86")
 		)
 		(pin "3"
-			(uuid "fc451060-f192-480a-8cf3-9847426d442f")
+			(uuid "fc451060-f192-480a-8cf3-9847426d4435")
 		)
 		(pin "5"
 			(uuid "afd5ea12-4d6f-47ca-8b26-1c62d6c1e6c2")
 		)
 		(pin "6"
-			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f14")
+			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f17")
 		)
 		(pin "3"
 			(uuid "7df20980-3a76-4b38-86e9-3c0186ef4ece")
 		)
 		(pin "4"
-			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3782")
+			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3788")
 		)
 		(pin "1"
-			(uuid "74b8ebb7-f467-4801-be57-cab01b028ae9")
+			(uuid "74b8ebb7-f467-4801-be57-cab01b028aec")
 		)
 		(pin "6"
-			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c4269fa")
+			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c4269fd")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -16365,6 +17274,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 212.725 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 212.725 56.515 0)
 			(effects
 				(font
@@ -16507,17 +17425,35 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 119.38 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 119.38 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "b20f0cf6-7629-4a38-beef-e8034c1f4907")
+			(uuid "b20f0cf6-7629-4a38-beef-e8034c1f4908")
 		)
 		(pin "3"
-			(uuid "fc451060-f192-480a-8cf3-9847426d4430")
+			(uuid "fc451060-f192-480a-8cf3-9847426d4436")
 		)
 		(pin "5"
-			(uuid "3f26acbc-4932-4877-b9d1-f890471acc24")
+			(uuid "3f26acbc-4932-4877-b9d1-f890471acc29")
 		)
 		(pin "6"
-			(uuid "1b3c9fed-d670-4e41-9cda-8267b1a59407")
+			(uuid "1b3c9fed-d670-4e41-9cda-8267b1a59409")
 		)
 		(pin "3"
 			(uuid "d73e23fe-785d-4aa5-9e6f-297a618cb1c7")
@@ -16526,10 +17462,10 @@
 			(uuid "9efc5411-0d2e-4f7d-8b5d-1a220d5f408c")
 		)
 		(pin "1"
-			(uuid "7096151c-6647-4df4-9530-1f8de8a77573")
+			(uuid "7096151c-6647-4df4-9530-1f8de8a77575")
 		)
 		(pin "6"
-			(uuid "24d2d814-761b-4f52-8b53-385684dd7f8c")
+			(uuid "24d2d814-761b-4f52-8b53-385684dd7f8d")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -16584,6 +17520,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 107.95 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25756"
+			(at 107.95 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 107.95 96.52 0)
 			(effects
 				(font
@@ -16661,17 +17615,35 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 52.07 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b85")
+			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b87")
 		)
 		(pin "3"
-			(uuid "fc451060-f192-480a-8cf3-9847426d4431")
+			(uuid "fc451060-f192-480a-8cf3-9847426d4437")
 		)
 		(pin "5"
-			(uuid "3f26acbc-4932-4877-b9d1-f890471acc25")
+			(uuid "3f26acbc-4932-4877-b9d1-f890471acc2a")
 		)
 		(pin "6"
-			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f16")
+			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f18")
 		)
 		(pin "3"
 			(uuid "d6cc7bd6-11ec-4bf9-bbcc-8e960b579944")
@@ -16680,10 +17652,10 @@
 			(uuid "c568b121-901d-40e3-8bb9-c253f67444e7")
 		)
 		(pin "1"
-			(uuid "74b8ebb7-f467-4801-be57-cab01b028aeb")
+			(uuid "74b8ebb7-f467-4801-be57-cab01b028aed")
 		)
 		(pin "6"
-			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c4269fc")
+			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c4269fe")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -16814,29 +17786,47 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 119.38 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 119.38 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b84")
+			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b88")
 		)
 		(pin "3"
-			(uuid "fc451060-f192-480a-8cf3-9847426d4430")
+			(uuid "fc451060-f192-480a-8cf3-9847426d4438")
 		)
 		(pin "5"
-			(uuid "3f26acbc-4932-4877-b9d1-f890471acc24")
+			(uuid "3f26acbc-4932-4877-b9d1-f890471acc2b")
 		)
 		(pin "6"
-			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f15")
+			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f19")
 		)
 		(pin "3"
-			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714cb")
+			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714d0")
 		)
 		(pin "4"
-			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3783")
+			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3789")
 		)
 		(pin "1"
-			(uuid "74b8ebb7-f467-4801-be57-cab01b028aea")
+			(uuid "74b8ebb7-f467-4801-be57-cab01b028aee")
 		)
 		(pin "6"
-			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c4269fb")
+			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c4269ff")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -16853,9 +17843,9 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "882c2dc0-a85d-47a6-8239-a6787f8021bb")
 		(property "Reference" "P204"
 			(at 104.775 29.845 0)
@@ -16894,6 +17884,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 109.855 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 109.855 53.975 0)
 			(effects
 				(font
@@ -17011,6 +18010,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25756"
+			(at 107.95 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 107.95 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "64790d42-bc98-4217-9cc7-7f116187068a")
 		)
@@ -17073,6 +18090,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 34.925 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 34.925 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C157594"
 			(at 34.925 54.61 0)
 			(effects
 				(font
@@ -17191,29 +18226,47 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 83.82 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 83.82 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
-			(uuid "3e3e3ea0-8225-4227-aa55-f6b7f1821ceb")
+			(uuid "3e3e3ea0-8225-4227-aa55-f6b7f1821cec")
 		)
 		(pin "4"
-			(uuid "aacd03c7-d59a-4521-9ddb-815d698016c0")
+			(uuid "aacd03c7-d59a-4521-9ddb-815d698016c1")
 		)
 		(pin "3"
-			(uuid "772a9042-15ec-46cf-a14a-9de0178c01e8")
+			(uuid "772a9042-15ec-46cf-a14a-9de0178c01e9")
 		)
 		(pin "5"
-			(uuid "bd97b4b4-42a0-42ed-bc40-5128eb1e9519")
+			(uuid "bd97b4b4-42a0-42ed-bc40-5128eb1e951a")
 		)
 		(pin "2"
-			(uuid "4fa3bffe-ae43-44b4-91c9-a05ead11483a")
+			(uuid "4fa3bffe-ae43-44b4-91c9-a05ead11483b")
 		)
 		(pin "1"
-			(uuid "2d732fd4-74ff-4452-87d7-98646d66e337")
+			(uuid "2d732fd4-74ff-4452-87d7-98646d66e338")
 		)
 		(pin "3"
-			(uuid "e7ca6545-f762-4a94-a16a-4f4fb379c3f8")
+			(uuid "e7ca6545-f762-4a94-a16a-4f4fb379c3f9")
 		)
 		(pin "6"
-			(uuid "181dc20e-5c49-4e78-b3b9-265f0bbe067a")
+			(uuid "181dc20e-5c49-4e78-b3b9-265f0bbe067b")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -17269,6 +18322,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 162.56 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C282361"
+			(at 162.56 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 162.56 31.75 0)
 			(effects
 				(font
@@ -17349,23 +18420,41 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 52.07 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b84")
+			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b89")
 		)
 		(pin "3"
-			(uuid "fc451060-f192-480a-8cf3-9847426d4430")
+			(uuid "fc451060-f192-480a-8cf3-9847426d4439")
 		)
 		(pin "5"
-			(uuid "3f26acbc-4932-4877-b9d1-f890471acc24")
+			(uuid "3f26acbc-4932-4877-b9d1-f890471acc2c")
 		)
 		(pin "6"
 			(uuid "ec53a797-1bf4-4b89-b739-41d3a18f0a4a")
 		)
 		(pin "3"
-			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714cb")
+			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714d1")
 		)
 		(pin "4"
-			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3783")
+			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea378a")
 		)
 		(pin "1"
 			(uuid "d771c1c9-c37e-4113-be01-e816b1538e97")
@@ -17499,6 +18588,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25790"
+			(at 40.64 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 40.64 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c7eb34b5-9276-483e-bec1-646fa87638dc")
 		)
@@ -17558,6 +18665,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 40.64 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25790"
+			(at 40.64 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 40.64 120.65 0)
 			(effects
 				(font
@@ -17701,29 +18826,47 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 52.07 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "fc76cf27-d5ce-4431-921b-3e50bf1e5e7b")
 		)
 		(pin "3"
-			(uuid "db3f1748-bbeb-450f-92cc-863439502fcd")
+			(uuid "db3f1748-bbeb-450f-92cc-863439502fd1")
 		)
 		(pin "6"
-			(uuid "6aa12795-c660-4aba-9aa1-2419f53d72f7")
+			(uuid "6aa12795-c660-4aba-9aa1-2419f53d72fb")
 		)
 		(pin "6"
-			(uuid "749b93cb-9e1f-4f05-8790-ae73eef2846c")
+			(uuid "749b93cb-9e1f-4f05-8790-ae73eef28470")
 		)
 		(pin "1"
-			(uuid "b2b547bd-635c-4ffb-8a05-a6d2506900d4")
+			(uuid "b2b547bd-635c-4ffb-8a05-a6d2506900d8")
 		)
 		(pin "5"
 			(uuid "421de00a-cf64-430c-b335-2534dc1ae2e1")
 		)
 		(pin "4"
-			(uuid "c9c28164-f793-43b7-b5ae-f2c865029316")
+			(uuid "c9c28164-f793-43b7-b5ae-f2c865029319")
 		)
 		(pin "2"
-			(uuid "8cf51fe1-859f-4c30-82b6-c5799293d077")
+			(uuid "8cf51fe1-859f-4c30-82b6-c5799293d07b")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -17786,6 +18929,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25790"
+			(at 40.64 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 40.64 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "653bd88a-1049-42e0-92ee-2e3ed522805f")
 		)
@@ -17829,7 +18990,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "RP2040_minimal:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal_modified"
+		(property "Footprint" "Connector_USB:USB_Micro-B_Amphenol_10118194_Horizontal"
 			(at 300.99 143.51 0)
 			(effects
 				(font
@@ -17848,6 +19009,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 304.8 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 304.8 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C132563"
 			(at 304.8 142.24 0)
 			(effects
 				(font
@@ -17890,7 +19069,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a1196f01-9219-4af6-9b5a-bf8f6ce009e7")
 		(property "Reference" "R27"
 			(at 251.333 40.1066 0)
@@ -17929,6 +19108,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 249.555 41.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 249.555 41.275 0)
 			(effects
 				(font
@@ -17997,6 +19185,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 83.185 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 83.185 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C157594"
 			(at 83.185 53.975 0)
 			(effects
 				(font
@@ -18132,7 +19338,7 @@
 		(at 269.24 223.52 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "ad0b504d-fc7b-4fff-891d-e818ad2c519c")
@@ -18174,6 +19380,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 269.24 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 269.24 223.52 0)
 			(effects
 				(font
@@ -18247,29 +19462,47 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 52.07 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
-			(uuid "3e3e3ea0-8225-4227-aa55-f6b7f1821ceb")
+			(uuid "3e3e3ea0-8225-4227-aa55-f6b7f1821ced")
 		)
 		(pin "4"
-			(uuid "aacd03c7-d59a-4521-9ddb-815d698016c0")
+			(uuid "aacd03c7-d59a-4521-9ddb-815d698016c2")
 		)
 		(pin "3"
-			(uuid "772a9042-15ec-46cf-a14a-9de0178c01e8")
+			(uuid "772a9042-15ec-46cf-a14a-9de0178c01ea")
 		)
 		(pin "5"
-			(uuid "bd97b4b4-42a0-42ed-bc40-5128eb1e9519")
+			(uuid "bd97b4b4-42a0-42ed-bc40-5128eb1e951b")
 		)
 		(pin "2"
-			(uuid "4fa3bffe-ae43-44b4-91c9-a05ead11483a")
+			(uuid "4fa3bffe-ae43-44b4-91c9-a05ead11483c")
 		)
 		(pin "1"
-			(uuid "2d732fd4-74ff-4452-87d7-98646d66e337")
+			(uuid "2d732fd4-74ff-4452-87d7-98646d66e339")
 		)
 		(pin "3"
-			(uuid "e7ca6545-f762-4a94-a16a-4f4fb379c3f8")
+			(uuid "e7ca6545-f762-4a94-a16a-4f4fb379c3fa")
 		)
 		(pin "6"
-			(uuid "181dc20e-5c49-4e78-b3b9-265f0bbe067a")
+			(uuid "181dc20e-5c49-4e78-b3b9-265f0bbe067c")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -18326,6 +19559,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 180.34 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15850"
+			(at 180.34 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 180.34 36.83 0)
 			(effects
 				(font
@@ -18468,6 +19719,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 259.08 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 259.08 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4ce01b8f-fda2-4019-ade5-430eaac7bc0e")
 		)
@@ -18537,6 +19806,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1557"
+			(at 321.945 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 321.945 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ffd85a0d-a346-42fd-adbe-e73dee24de8f")
 		)
@@ -18596,6 +19883,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 40.64 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25790"
+			(at 40.64 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 40.64 219.71 0)
 			(effects
 				(font
@@ -18673,26 +19978,44 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "31cfb35b-016e-439f-982e-4902777e6820")
+		(property "LCSC" "C5240639"
+			(at 52.07 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "3"
-			(uuid "db3f1748-bbeb-450f-92cc-863439502fcc")
+			(uuid "31cfb35b-016e-439f-982e-4902777e6824")
+		)
+		(pin "3"
+			(uuid "db3f1748-bbeb-450f-92cc-863439502fd2")
 		)
 		(pin "6"
 			(uuid "c05cd797-4e18-476c-80d6-28d976c3f6d8")
 		)
 		(pin "6"
-			(uuid "749b93cb-9e1f-4f05-8790-ae73eef2846b")
+			(uuid "749b93cb-9e1f-4f05-8790-ae73eef28471")
 		)
 		(pin "1"
-			(uuid "b2b547bd-635c-4ffb-8a05-a6d2506900d3")
+			(uuid "b2b547bd-635c-4ffb-8a05-a6d2506900d9")
 		)
 		(pin "5"
-			(uuid "b7565ee3-b33a-4a98-aef6-b9b654a050cc")
+			(uuid "b7565ee3-b33a-4a98-aef6-b9b654a050d1")
 		)
 		(pin "4"
-			(uuid "c9c28164-f793-43b7-b5ae-f2c865029315")
+			(uuid "c9c28164-f793-43b7-b5ae-f2c86502931a")
 		)
 		(pin "2"
 			(uuid "0e3e0448-1af0-4ade-b570-2642debcfec9")
@@ -18760,29 +20083,47 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 119.38 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 119.38 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b84")
+			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b8a")
 		)
 		(pin "3"
-			(uuid "fc451060-f192-480a-8cf3-9847426d4430")
+			(uuid "fc451060-f192-480a-8cf3-9847426d443a")
 		)
 		(pin "5"
-			(uuid "3f26acbc-4932-4877-b9d1-f890471acc24")
+			(uuid "3f26acbc-4932-4877-b9d1-f890471acc2d")
 		)
 		(pin "6"
-			(uuid "ec53a797-1bf4-4b89-b739-41d3a18f0a4a")
+			(uuid "ec53a797-1bf4-4b89-b739-41d3a18f0a4b")
 		)
 		(pin "3"
-			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714cb")
+			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714d2")
 		)
 		(pin "4"
-			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3783")
+			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea378b")
 		)
 		(pin "1"
 			(uuid "16d4dd6a-a674-4986-8ba3-44a3825168a4")
 		)
 		(pin "6"
-			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c4269fb")
+			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c426a00")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -18847,29 +20188,47 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 52.07 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b85")
+			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b8b")
 		)
 		(pin "3"
 			(uuid "73e0a9c1-600f-4b6b-b37e-0ca50c608a91")
 		)
 		(pin "5"
-			(uuid "3f26acbc-4932-4877-b9d1-f890471acc25")
+			(uuid "3f26acbc-4932-4877-b9d1-f890471acc2e")
 		)
 		(pin "6"
-			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f16")
+			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f1a")
 		)
 		(pin "3"
-			(uuid "d6cc7bd6-11ec-4bf9-bbcc-8e960b579944")
+			(uuid "d6cc7bd6-11ec-4bf9-bbcc-8e960b579945")
 		)
 		(pin "4"
 			(uuid "e85cc872-7342-49ad-a1c5-3155fbe44993")
 		)
 		(pin "1"
-			(uuid "74b8ebb7-f467-4801-be57-cab01b028aeb")
+			(uuid "74b8ebb7-f467-4801-be57-cab01b028aef")
 		)
 		(pin "6"
-			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c4269fc")
+			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c426a01")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -18999,6 +20358,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 270.51 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 270.51 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7f6fb84a-1623-4dbc-83fe-08f4b491877f")
 		)
@@ -19067,29 +20444,47 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 83.82 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 83.82 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
-			(uuid "3e3e3ea0-8225-4227-aa55-f6b7f1821ceb")
+			(uuid "3e3e3ea0-8225-4227-aa55-f6b7f1821cee")
 		)
 		(pin "4"
-			(uuid "aacd03c7-d59a-4521-9ddb-815d698016c0")
+			(uuid "aacd03c7-d59a-4521-9ddb-815d698016c3")
 		)
 		(pin "3"
-			(uuid "772a9042-15ec-46cf-a14a-9de0178c01e8")
+			(uuid "772a9042-15ec-46cf-a14a-9de0178c01eb")
 		)
 		(pin "5"
-			(uuid "bd97b4b4-42a0-42ed-bc40-5128eb1e9519")
+			(uuid "bd97b4b4-42a0-42ed-bc40-5128eb1e951c")
 		)
 		(pin "2"
-			(uuid "4fa3bffe-ae43-44b4-91c9-a05ead11483a")
+			(uuid "4fa3bffe-ae43-44b4-91c9-a05ead11483d")
 		)
 		(pin "1"
-			(uuid "2d732fd4-74ff-4452-87d7-98646d66e337")
+			(uuid "2d732fd4-74ff-4452-87d7-98646d66e33a")
 		)
 		(pin "3"
-			(uuid "e7ca6545-f762-4a94-a16a-4f4fb379c3f8")
+			(uuid "e7ca6545-f762-4a94-a16a-4f4fb379c3fb")
 		)
 		(pin "6"
-			(uuid "181dc20e-5c49-4e78-b3b9-265f0bbe067a")
+			(uuid "181dc20e-5c49-4e78-b3b9-265f0bbe067d")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -19219,6 +20614,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 271.145 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 271.145 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bc72946c-dd6e-4755-a49f-41d0363c84d5")
 		)
@@ -19288,29 +20701,47 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 52.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b83")
+			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b8c")
 		)
 		(pin "3"
-			(uuid "fc451060-f192-480a-8cf3-9847426d442f")
+			(uuid "fc451060-f192-480a-8cf3-9847426d443b")
 		)
 		(pin "5"
 			(uuid "3549f824-9538-4918-a415-626c7956dad7")
 		)
 		(pin "6"
-			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f14")
+			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f1b")
 		)
 		(pin "3"
 			(uuid "5d38e85c-949e-45f5-8c10-5c50321354d6")
 		)
 		(pin "4"
-			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3782")
+			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea378c")
 		)
 		(pin "1"
-			(uuid "74b8ebb7-f467-4801-be57-cab01b028ae9")
+			(uuid "74b8ebb7-f467-4801-be57-cab01b028af0")
 		)
 		(pin "6"
-			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c4269fa")
+			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c426a02")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -19403,7 +20834,7 @@
 				)
 			)
 		)
-		(property "Value" "NCP1117-3.3_SOT223"
+		(property "Value" "AZ117EH-3.3"
 			(at 198.12 27.9146 0)
 			(effects
 				(font
@@ -19430,6 +20861,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 198.12 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C108494"
 			(at 198.12 31.75 0)
 			(effects
 				(font
@@ -19500,6 +20940,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 107.95 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25756"
+			(at 107.95 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 107.95 134.62 0)
 			(effects
 				(font
@@ -19640,6 +21098,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25790"
+			(at 40.64 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 40.64 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "85d9dc8d-a41d-4350-8fcc-d63a15687692")
 		)
@@ -19660,7 +21136,7 @@
 		(at 177.165 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "eb4c00a2-b87c-47ea-90a2-8b559c7d466d")
@@ -19702,6 +21178,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 177.165 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 177.165 64.77 0)
 			(effects
 				(font
@@ -19841,29 +21326,47 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5240639"
+			(at 119.38 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 119.38 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b85")
+			(uuid "fcb426b4-f039-4b50-b4d2-f35038815b8d")
 		)
 		(pin "3"
-			(uuid "fc451060-f192-480a-8cf3-9847426d4431")
+			(uuid "fc451060-f192-480a-8cf3-9847426d443c")
 		)
 		(pin "5"
-			(uuid "3f26acbc-4932-4877-b9d1-f890471acc25")
+			(uuid "3f26acbc-4932-4877-b9d1-f890471acc2f")
 		)
 		(pin "6"
-			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f16")
+			(uuid "494fa9f0-2051-4d30-ada6-ab6e06b71f1c")
 		)
 		(pin "3"
-			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714cc")
+			(uuid "f1e3bc01-9eb6-491a-b6e8-1cc4145714d3")
 		)
 		(pin "4"
-			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea3784")
+			(uuid "5066b0a2-d1d2-4af3-b727-8e98f4ea378d")
 		)
 		(pin "1"
-			(uuid "74b8ebb7-f467-4801-be57-cab01b028aeb")
+			(uuid "74b8ebb7-f467-4801-be57-cab01b028af1")
 		)
 		(pin "6"
-			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c4269fc")
+			(uuid "9a50cc78-9fd2-4881-8ae5-462f8c426a03")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
@@ -19880,9 +21383,9 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fae3ca44-1c89-4f1a-883f-ef0a130df703")
 		(property "Reference" "P203"
 			(at 60.96 30.48 0)
@@ -19919,6 +21422,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 61.595 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
 			(at 61.595 54.61 0)
 			(effects
 				(font
@@ -20036,6 +21548,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25790"
+			(at 40.64 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 40.64 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2f583c87-85af-4ad3-98e0-6e751795de94")
 		)
@@ -20105,29 +21635,47 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "31cfb35b-016e-439f-982e-4902777e6823")
+		(property "LCSC" "C5240639"
+			(at 52.07 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 52.07 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "3"
-			(uuid "db3f1748-bbeb-450f-92cc-863439502fcf")
+			(uuid "31cfb35b-016e-439f-982e-4902777e6825")
+		)
+		(pin "3"
+			(uuid "db3f1748-bbeb-450f-92cc-863439502fd3")
 		)
 		(pin "6"
 			(uuid "8d593831-50ed-425a-91e6-1d55ed17dcbd")
 		)
 		(pin "6"
-			(uuid "749b93cb-9e1f-4f05-8790-ae73eef2846e")
+			(uuid "749b93cb-9e1f-4f05-8790-ae73eef28472")
 		)
 		(pin "1"
 			(uuid "1116d848-e813-4922-9592-a8a6632a3a87")
 		)
 		(pin "5"
-			(uuid "b7565ee3-b33a-4a98-aef6-b9b654a050cf")
+			(uuid "b7565ee3-b33a-4a98-aef6-b9b654a050d2")
 		)
 		(pin "4"
-			(uuid "c9c28164-f793-43b7-b5ae-f2c865029318")
+			(uuid "c9c28164-f793-43b7-b5ae-f2c86502931b")
 		)
 		(pin "2"
-			(uuid "8cf51fe1-859f-4c30-82b6-c5799293d079")
+			(uuid "8cf51fe1-859f-4c30-82b6-c5799293d07c")
 		)
 		(instances
 			(project "fluke_884x_continuity_buzzer"
