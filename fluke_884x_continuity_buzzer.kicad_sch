@@ -11970,7 +11970,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Buzzer_Beeper:Buzzer_12x9.5RM7.6"
+		(property "Footprint" "RP2040_minimal:Buzzer_17x9RM10"
 			(at 278.511 227.33 0)
 			(effects
 				(font
@@ -11997,7 +11997,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field-1" ""
+		(property "LCSC" "C360609"
 			(at 279.4 226.06 0)
 			(effects
 				(font
@@ -17282,7 +17282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field-1" ""
+		(property "LCSC" "C2685154"
 			(at 212.725 56.515 0)
 			(effects
 				(font
