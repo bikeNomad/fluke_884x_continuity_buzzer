@@ -1,0 +1,32 @@
+import machine
+from micropython import const
+
+PWM_FREQUENCY = const(1000)  # 1 kHz
+PWM_DUTY_CYCLE = const(32768)  # 50%
+
+# Global register EN has an alias of the CSR_EN flag for each slice.
+PWM_EN = const(0x400500A0)  # bits 0-7 are the enable bits for each PWM slice
+
+pwm1 = None
+pwm2 = None
+
+# Configure PWM on GPIO pins 28 and 29
+# Both of these pins are connected to the piezo buzzer.
+# They are also controlled by PWM slice #6, so we can use them to generate complementary PWM signals.
+
+def initialize_pwm():
+    global pwm1, pwm2
+    if pwm1 is None:
+        pwm1 = machine.PWM(machine.Pin(28), freq=PWM_FREQUENCY, invert=False)
+        pwm1.duty_u16(PWM_DUTY_CYCLE)
+    if pwm2 is None:
+        pwm2 = machine.PWM(machine.Pin(29), freq=PWM_FREQUENCY, invert=True)
+        pwm2.duty_u16(PWM_DUTY_CYCLE)
+
+    disable_pwm()
+
+def enable_pwm():
+    machine.mem32[PWM_EN] |= 0x40 # enable slice 6
+
+def disable_pwm():
+    machine.mem32[PWM_EN] &= ~0x40 # disable slice 6
