@@ -5307,6 +5307,12 @@
 		(uuid "776056c7-841d-48f2-9373-918b52af9dc0")
 	)
 	(junction
+		(at 163.83 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a7346f1-67b8-4065-a930-2cc56b26a6d8")
+	)
+	(junction
 		(at 48.26 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5421,6 +5427,12 @@
 		(uuid "ac37ba26-572d-416e-b4d5-de9789064974")
 	)
 	(junction
+		(at 156.21 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae02bbe4-b96c-47eb-8867-5e0f97641056")
+	)
+	(junction
 		(at 48.26 204.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5461,6 +5473,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb392d95-b7ac-4d36-af4c-7f8cd27da381")
+	)
+	(junction
+		(at 171.45 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf5b9abd-7666-4673-8899-128664be0df2")
 	)
 	(junction
 		(at 48.26 158.75)
@@ -5555,10 +5573,6 @@
 	(no_connect
 		(at 297.18 147.32)
 		(uuid "23c62785-f21e-47d6-85f5-42c0be6ef121")
-	)
-	(no_connect
-		(at 297.18 137.16)
-		(uuid "f7aed034-8dfd-49f2-a112-e8ba54f8f802")
 	)
 	(wire
 		(pts
@@ -6442,6 +6456,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 48.26) (xy 171.45 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3946ce6b-550b-4179-9bae-d4aa309ffae2")
+	)
+	(wire
+		(pts
 			(xy 247.65 102.87) (xy 247.65 101.6)
 		)
 		(stroke
@@ -6572,6 +6596,16 @@
 	)
 	(wire
 		(pts
+			(xy 292.1 137.16) (xy 297.18 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45315398-db51-42d3-98b0-c9a89ca6507a")
+	)
+	(wire
+		(pts
 			(xy 304.8 113.03) (xy 293.37 113.03)
 		)
 		(stroke
@@ -6599,6 +6633,16 @@
 			(type default)
 		)
 		(uuid "4631f71f-4d7c-4e32-93fe-72229987aeff")
+	)
+	(wire
+		(pts
+			(xy 163.83 48.26) (xy 163.83 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47a898b6-bd9e-49fc-a46e-849d13ebcdc0")
 	)
 	(wire
 		(pts
@@ -7182,6 +7226,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 31.75) (xy 180.34 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "724f6999-1c8f-44f0-be6d-0712bd9d2a45")
+	)
+	(wire
+		(pts
 			(xy 44.45 166.37) (xy 48.26 166.37)
 		)
 		(stroke
@@ -7602,6 +7656,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 48.26) (xy 156.21 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "948dba09-a5a0-412b-88b8-9e9b9b65ffbc")
+	)
+	(wire
+		(pts
 			(xy 238.76 101.6) (xy 238.76 116.84)
 		)
 		(stroke
@@ -7749,6 +7813,16 @@
 			(type default)
 		)
 		(uuid "9c949bc4-9b50-4c91-8c0b-44f2390601de")
+	)
+	(wire
+		(pts
+			(xy 163.83 48.26) (xy 171.45 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dc663d9-982d-48fd-81fb-2f2c95ff6523")
 	)
 	(wire
 		(pts
@@ -8062,7 +8136,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 31.75) (xy 180.34 31.75)
+			(xy 170.18 31.75) (xy 171.45 31.75)
 		)
 		(stroke
 			(width 0)
@@ -8932,6 +9006,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 48.26) (xy 156.21 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f32d3ce5-4ef3-4e6b-8394-b1bcc5ecf9cc")
+	)
+	(wire
+		(pts
 			(xy 63.5 101.6) (xy 55.88 101.6)
 		)
 		(stroke
@@ -9638,6 +9722,17 @@
 		)
 		(uuid "5cb7a5d6-a141-419b-b6a9-cdcc136825ab")
 	)
+	(label "VBUS"
+		(at 148.59 48.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5d170e67-9264-450e-8e93-35e95b98ecea")
+	)
 	(label "GPIO24"
 		(at 269.24 213.36 180)
 		(fields_autoplaced yes)
@@ -10044,6 +10139,17 @@
 			(justify left bottom)
 		)
 		(uuid "aa5a19b2-b50c-4e65-bf10-b778fa358c5f")
+	)
+	(label "VBUS"
+		(at 292.1 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aab9ab74-24d3-4f97-9cce-c4734cb3d2b1")
 	)
 	(label "Pe"
 		(at 93.345 43.815 0)
@@ -18175,7 +18281,7 @@
 	)
 	(symbol
 		(lib_id "misc:BAT54CDW")
-		(at 83.82 182.88 180)
+		(at 160.02 48.26 180)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18183,7 +18289,7 @@
 		(dnp no)
 		(uuid "89de62bd-3817-48f5-b1e6-9648e6266383")
 		(property "Reference" "D8"
-			(at 87.122 180.594 0)
+			(at 163.322 45.974 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18191,7 +18297,7 @@
 			)
 		)
 		(property "Value" "BAT54CDW"
-			(at 84.1375 179.07 0)
+			(at 160.3375 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18200,7 +18306,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 83.82 178.435 0)
+			(at 160.02 43.815 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18209,7 +18315,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BAT54TW_ADW_CDW_SDW_BRW.pdf"
-			(at 83.82 185.42 0)
+			(at 160.02 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18218,7 +18324,7 @@
 			)
 		)
 		(property "Description" "Schottky diode array 2 pair Com C, SOT-363"
-			(at 83.82 182.88 0)
+			(at 160.02 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18227,7 +18333,7 @@
 			)
 		)
 		(property "LCSC" "C5240639"
-			(at 83.82 182.88 0)
+			(at 160.02 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18236,7 +18342,7 @@
 			)
 		)
 		(property "Field-1" ""
-			(at 83.82 182.88 0)
+			(at 160.02 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19067,7 +19173,7 @@
 		(at 249.555 41.275 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "a1196f01-9219-4af6-9b5a-bf8f6ce009e7")
@@ -20393,7 +20499,7 @@
 	)
 	(symbol
 		(lib_id "misc:BAT54CDW")
-		(at 83.82 191.77 180)
+		(at 160.02 53.34 180)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20401,7 +20507,7 @@
 		(dnp no)
 		(uuid "cd6071ca-47de-488a-b73f-84e97e08a96d")
 		(property "Reference" "D8"
-			(at 86.868 189.23 0)
+			(at 162.814 50.292 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20409,7 +20515,7 @@
 			)
 		)
 		(property "Value" "BAT54CDW"
-			(at 84.1375 187.96 0)
+			(at 160.3375 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20418,7 +20524,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 83.82 187.325 0)
+			(at 160.02 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20427,7 +20533,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BAT54TW_ADW_CDW_SDW_BRW.pdf"
-			(at 83.82 194.31 0)
+			(at 160.02 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20436,7 +20542,7 @@
 			)
 		)
 		(property "Description" "Schottky diode array 2 pair Com C, SOT-363"
-			(at 83.82 191.77 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20445,7 +20551,7 @@
 			)
 		)
 		(property "LCSC" "C5240639"
-			(at 83.82 191.77 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20454,7 +20560,7 @@
 			)
 		)
 		(property "Field-1" ""
-			(at 83.82 191.77 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
