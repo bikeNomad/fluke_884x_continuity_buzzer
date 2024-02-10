@@ -11,7 +11,7 @@ _GPIO_IN = const(0xD0000004)
 # Delay in microseconds to wait after a digit line goes high before reading the GPIO pin states.
 _EDGE_DELAY_US = const(10)
 # Special segments that indicate that continuity is not present on the Fluke 8840A/8842A multimeter.
-_NO_CONTINUITY = set("OVER", "ERROR", "CAL", "mA", "mV", "DC", "AC", "M", "k")
+_NO_CONTINUITY = set(["OVER", "ERROR", "CAL", "mA", "mV", "DC", "AC", "M", "k"])
 # Maximum resistance value that indicates continuity
 _CONTINUITY_THRESHOLD = 10.0
 
@@ -24,7 +24,7 @@ def BIT(n):
 # as bit masks, translating gpio_config.PIN_XXX to XXX=BIT(XXX)
 for name in dir(gpio_config):
     if name.startswith("PIN_"):
-        globals()[name.removeprefix("PIN_")] = BIT(getattr(gpio_config, name))
+        globals()[name[4:]] = BIT(getattr(gpio_config, name))
 
 
 SEGMENT_MASK = PA | PB | PC | PD | PE | PF | PG
@@ -132,7 +132,7 @@ def read_dp(digit_number, value) -> bool:
 
 # Return a set of strings representing the special segments that are active for the given digit number and GPIO port reading.
 def read_specials(digit_number: int, value) -> set:
-    smask, patterns = SPECIAL_LOOKUP.get(digit_number, (0,))
+    smask, *patterns = SPECIAL_LOOKUP.get(digit_number, (0,))
     retval = set()
     if smask == 0:
         return retval
@@ -196,7 +196,7 @@ def read_all_digit_gpios():
         read_all_digit_gpios_into(gpio_values)
         for digit_number, value in enumerate(gpio_values, 1):
             digit = read_digit(digit_number, value)
-            digits[digit_number] = digit
+            digits[digit_number-1] = digit
             if read_dp(digit_number, value):
                 decimal_point_position = digit_number
             specials.update(read_specials(digit_number, value))
