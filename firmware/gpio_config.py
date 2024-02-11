@@ -1,14 +1,15 @@
 # Definitions of GPIO pin names and numbers
 from micropython import const
+from machine import Pin, mem32
 
 # GPIO pin names for the RP2040 microcontroller pins connected to the Fluke multimeter signals.
 # The pin numbers are the GPIO pin numbers on the RP2040.
 # The pin names are the names used in the Fluke 8840A/8842A multimeter documentation.
 # RL0-RL6 are the switch return lines for the matrix keyboard and are active-low signals.
 # G0-G7 are the digit select lines for the 7-segment display and are active-high signals.
-# PA-PG are the segment select lines for the 7-segment display and are active-low signals.
-# PDP is the decimal point signal for the 7-segment display and is an active-low signal.
-# PS1-PS3 are the segment select lines for the extra words on the display and are active-low signals.
+# PA-PG are the segment select lines for the 7-segment display and are active-high signals.
+# PDP is the decimal point signal for the 7-segment display and is an active-high signal.
+# PS1-PS3 are the segment select lines for the extra words on the display and are active-high signals.
 PIN_RL3 = const(0)
 PIN_RL5 = const(1)
 PIN_RL2 = const(2)
@@ -39,3 +40,17 @@ PIN_PE = const(25)
 # Two GPIO pins are used to drive the piezo buzzer.
 PIN_BUZZER1 = const(28)
 PIN_BUZZER2 = const(29)
+
+INPUT_PIN_MASK = const(0x03FFFFFF)  # mask for the 26 GPIO pins used as inputs
+
+
+def initialize_pins():
+    # Set all the GPIO pins to inputs with pull-up resistors.
+    for pin in range(26):
+        Pin(pin, Pin.IN, Pin.PULL_DOWN)
+    # set the VOLTAGE_SELECT register to 1 for 1.8V thresholds.
+    mem32[0x4001_c000] = 1
+    
+    # Set the piezo buzzer pins to outputs.
+    Pin(PIN_BUZZER1, Pin.OUT).value(0)
+    Pin(PIN_BUZZER2, Pin.OUT).value(0)

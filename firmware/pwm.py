@@ -1,5 +1,6 @@
 import machine
 from micropython import const
+from gpio_config import PIN_BUZZER1, PIN_BUZZER2
 
 PWM_FREQUENCY = const(1000)  # 1 kHz
 PWM_DUTY_CYCLE = const(32768)  # 50%
@@ -17,10 +18,10 @@ pwm2 = None
 def initialize_pwm():
     global pwm1, pwm2
     if pwm1 is None:
-        pwm1 = machine.PWM(machine.Pin(28), freq=PWM_FREQUENCY, invert=False)
+        pwm1 = machine.PWM(machine.Pin(PIN_BUZZER1), freq=PWM_FREQUENCY, invert=False)
         pwm1.duty_u16(PWM_DUTY_CYCLE)
     if pwm2 is None:
-        pwm2 = machine.PWM(machine.Pin(29), freq=PWM_FREQUENCY, invert=True)
+        pwm2 = machine.PWM(machine.Pin(PIN_BUZZER2), freq=PWM_FREQUENCY, invert=True)
         pwm2.duty_u16(PWM_DUTY_CYCLE)
 
     disable_pwm()

@@ -1,4 +1,7 @@
 # Main module for the Fluke 8840A/8842A multimeter continuity tester.
+# Digit lines G0-G7 are active-high, with a period of 4.6ms
+# Segment lines Px are active-high.
+# Switch return lines Sx are active-low and are synced to G0-G3.
 from machine import mem32
 from time import sleep_ms, sleep_us
 import gpio_config
@@ -11,7 +14,7 @@ _GPIO_IN = const(0xD0000004)
 # Delay in microseconds to wait after a digit line goes high before reading the GPIO pin states.
 _EDGE_DELAY_US = const(10)
 # Special segments that indicate that continuity is not present on the Fluke 8840A/8842A multimeter.
-_NO_CONTINUITY = set(["OVER", "ERROR", "CAL", "mA", "mV", "DC", "AC", "M", "k"])
+_NO_CONTINUITY = set(("OVER", "ERROR", "CAL", "mA", "mV", "DC", "AC", "M", "k"))
 # Maximum resistance value that indicates continuity
 _CONTINUITY_THRESHOLD = 10.0
 
@@ -108,12 +111,13 @@ SPECIAL_LOOKUP = {
 }
 
 
-# Given a 32-bit GPIO port reading, return the currently-active digit on the 7-segment display.
+# Given a 32-bit GPIO port reading, return the currently-displayed digit on the 7-segment display.
 # Assumes that the GPIO port reading is valid and that only one digit is active at a time.
-# Assumes that segment lines are active-low and digit lines are active-high.
+# Assumes that segment lines are active-high.
+# @param digit_number: int 0-7 corresponding to G0-G7 active
+# @param value: int reading from GPIO port
 def read_digit(digit_number, value) -> int:
-    # invert value because segment lines are active-low
-    segment_lines = ~value & SEGMENT_MASK
+    segment_lines = value & SEGMENT_MASK
     # look up the digit in the table
     return (
         SEGMENT_LOOKUP_DIGIT_1.get(segment_lines, 0)
@@ -126,7 +130,7 @@ def read_digit(digit_number, value) -> int:
 # The only valid digit numbers are 1-6.
 def read_dp(digit_number, value) -> bool:
     if 1 <= digit_number <= 6:
-        return (value & PDP) == 0  # active-low
+        return (value & PDP) == PDP  # active-high
     return False
 
 
@@ -136,7 +140,7 @@ def read_specials(digit_number: int, value) -> set:
     retval = set()
     if smask == 0:
         return retval
-    segment_lines = ~value & smask # invert value because segment lines are active-low
+    segment_lines = value & smask # segment lines are active-high
     for mask, name in patterns:
         if segment_lines & mask == mask:
             retval.add(name)
@@ -157,9 +161,10 @@ def read_gpio_pins() -> int:
 
 # Read the states of the GPIO pins when each of the G0-G7 digit lines becomes active.
 # Store the results in the given array.
+# Assumes that digit lines are active-high.
 def read_all_digit_gpios_into(arr: array.array):
     for digit_number, digit_mask in enumerate((G0, G1, G2, G3, G4, G5, G6, G7)):
-        # wait until digit line goes high
+        # wait until digit line goes high 
         while read_gpio_pins() & digit_mask == 0:
             pass
         # wait a little bit for the signal to stabilize
@@ -172,7 +177,7 @@ def make_float(digits, decimal_point_position):
     # build a floating point number from the digits and decimal point position
     negative = digits[1] < 0
     full_number = 0
-    for digit_number in range(1, 7):
+    for digit_number in range(1, 6):
         full_number += abs(digits[digit_number])
         full_number *= 10
     # Now scale the number to the right place using decimal_point_position
@@ -184,22 +189,19 @@ def make_float(digits, decimal_point_position):
 
 # Generator that reads the GPIO pin states when each of the G0-G7 digit lines becomes active,
 # decodes the display, and yields the results.
-def read_all_digit_gpios():
-    gpio_values = array.array("L", [0, 0, 0, 0, 0, 0, 0, 0])
-    digits = array.array(
-        "b", [0, 0, 0, 0, 0, 0, 0, 0]
-    )  # signed because of possible leading -1
-    specials = set()
+def read_all_digit_gpios(gpio_values, digits, specials):
     while True:
         specials.clear()
         decimal_point_position = 0
         read_all_digit_gpios_into(gpio_values)
-        for digit_number, value in enumerate(gpio_values, 1):
+        for digit_number, value in enumerate(gpio_values):
             digit = read_digit(digit_number, value)
-            digits[digit_number-1] = digit
+            digits[digit_number] = digit
             if read_dp(digit_number, value):
                 decimal_point_position = digit_number
-            specials.update(read_specials(digit_number, value))
+            sp = read_specials(digit_number, value)
+            specials.update(sp)
+            print(f"{digit_number} {value:08x} {digit} {sp}")
         yield make_float(digits, decimal_point_position), specials
 
 
@@ -211,11 +213,20 @@ def has_continuity(value: float, specials: set):
 
 
 def main_loop():
-    for value, specials in read_all_digit_gpios():
+    gpio_values = array.array("L", [0, 0, 0, 0, 0, 0, 0, 0])
+    digits = array.array(
+        "b", [0, 0, 0, 0, 0, 0, 0, 0]
+    )  # signed because of possible leading -1
+    specials = set()
+    for value, specials in read_all_digit_gpios(gpio_values, digits, specials):
         print(value, specials)
         if has_continuity(value, specials):
-            print("Continuity detected")
-            pwm.enable_pwm()  # buzzer ON
+            # print("Continuity detected")
+            # pwm.enable_pwm()  # buzzer ON
             sleep_ms(100)
         else:
             pwm.disable_pwm()  # buzzer OFF
+
+        sleep_ms(1000)
+
+pwm.initialize_pwm()
