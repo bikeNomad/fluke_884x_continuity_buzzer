@@ -2,25 +2,19 @@
 # Digit lines G0-G7 are active-high, with a period of 4.6ms
 # Segment lines Px are active-high.
 # Switch return lines Sx are active-low and are synced to G0-G3.
-from machine import mem32
 from time import sleep_ms, sleep_us
 import gpio_config
+from gpio_config import read_gpio_pins, BIT
 from micropython import const
 import array
 import pwm
 
-# Address of the GPIO input register on the RP2040
-_GPIO_IN = const(0xD0000004)
 # Delay in microseconds to wait after a digit line goes high before reading the GPIO pin states.
 _EDGE_DELAY_US = const(10)
 # Special segments that indicate that continuity is not present on the Fluke 8840A/8842A multimeter.
 _NO_CONTINUITY = set(("OVER", "ERROR", "CAL", "mA", "mV", "DC", "AC", "M", "k"))
 # Maximum resistance value that indicates continuity
 _CONTINUITY_THRESHOLD = 10.0
-
-
-def BIT(n):
-    return 1 << n
 
 
 # import all the PIN_ constants from gpio_config.py into this module's namespace
@@ -140,7 +134,7 @@ def read_specials(digit_number: int, value) -> set:
     retval = set()
     if smask == 0:
         return retval
-    segment_lines = value & smask # segment lines are active-high
+    segment_lines = value & smask  # segment lines are active-high
     for mask, name in patterns:
         if segment_lines & mask == mask:
             retval.add(name)
@@ -154,17 +148,12 @@ def read_digit_number(value):
     return DIGIT_LOOKUP[value & DIGIT_MASK]
 
 
-# Read all 30 of the GPIO pin states at once.
-def read_gpio_pins() -> int:
-    return mem32[_GPIO_IN]
-
-
 # Read the states of the GPIO pins when each of the G0-G7 digit lines becomes active.
 # Store the results in the given array.
 # Assumes that digit lines are active-high.
 def read_all_digit_gpios_into(arr: array.array):
     for digit_number, digit_mask in enumerate((G0, G1, G2, G3, G4, G5, G6, G7)):
-        # wait until digit line goes high 
+        # wait until digit line goes high
         while read_gpio_pins() & digit_mask == 0:
             pass
         # wait a little bit for the signal to stabilize
@@ -228,5 +217,6 @@ def main_loop():
             pwm.disable_pwm()  # buzzer OFF
 
         sleep_ms(1000)
+
 
 pwm.initialize_pwm()
