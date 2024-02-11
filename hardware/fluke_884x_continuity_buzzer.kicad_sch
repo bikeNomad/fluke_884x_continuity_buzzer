@@ -6,8 +6,8 @@
 	(paper "USLedger")
 	(title_block
 		(title "Fluke 884x Continuity Buzzer")
-		(date "2024-01-14")
-		(rev "REV1")
+		(date "2024-02-11")
+		(rev "REV2")
 		(company "Ned Konz")
 	)
 	(lib_symbols
@@ -5990,6 +5990,12 @@
 		(uuid "494a8f57-5461-4fc0-a199-7ca947b25fbc")
 	)
 	(junction
+		(at 156.21 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b0410a3-4028-4e0a-b45a-f3a2ee316e7c")
+	)
+	(junction
 		(at 48.26 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6098,12 +6104,6 @@
 		(uuid "776056c7-841d-48f2-9373-918b52af9dc0")
 	)
 	(junction
-		(at 163.83 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7a7346f1-67b8-4065-a930-2cc56b26a6d8")
-	)
-	(junction
 		(at 48.26 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6164,6 +6164,12 @@
 		(uuid "9d23e353-0c31-442a-b5bd-5b8a4c11ed9c")
 	)
 	(junction
+		(at 163.83 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4525285-61c4-4ed1-8112-f9c77eb1c916")
+	)
+	(junction
 		(at 63.5 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6192,12 +6198,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac37ba26-572d-416e-b4d5-de9789064974")
-	)
-	(junction
-		(at 156.21 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ae02bbe4-b96c-47eb-8867-5e0f97641056")
 	)
 	(junction
 		(at 48.26 204.47)
@@ -9816,7 +9816,7 @@
 		)
 		(uuid "11443f41-46bf-48eb-93c3-8d9480e16942")
 	)
-	(text "F1-F2 are from a 4.5VAC transformer whose center-tap is tied to +5V.\nthe Pxx and Gxx lines are 30V logic.\nThe S0-S2 lines are inverted, current-sinking, 5V versions of G0-G2 used for scanning the key matrix columns.\nThe RL0-RL6 lines are 5V logic row lines coming from the key matrix."
+	(text "F1-F2 are from a 4.5VAC transformer whose center-tap is tied to +5V.\nThe Pxx and Gxx lines are 30V logic. All 19 of these lines are clamped to 3.3V\nusing the 270k resistors R1-R19 and their associated Schottky diodes.\nThe S0-S2 lines are inverted, current-sinking,\n5V versions of G0-G2 used for scanning the key matrix columns.\nSince these duplicate G0-G2, we don't bother watching them also.\nThe RL0-RL6 lines are 5V logic row lines coming from the key matrix."
 		(exclude_from_sim no)
 		(at 16.51 260.985 0)
 		(effects
@@ -9848,7 +9848,7 @@
 		)
 		(uuid "7c083ad1-5207-413f-994d-5a2dfae3b1ce")
 	)
-	(text "U5 allows driving the keypad RL0-RL6 lines.\n\nDIR H, ~{OE} L: A->B\nDIR L, ~{OE} L: B->A\n~{OE} H: both sides Hi-Z"
+	(text "U5 allows watching or driving the (5V logic) keypad RL0-RL6 lines.\n\nDIR H, ~{OE} L: A->B\nDIR L, ~{OE} L: B->A\n~{OE} H: both sides Hi-Z"
 		(exclude_from_sim no)
 		(at 80.772 209.296 0)
 		(effects
@@ -9880,6 +9880,16 @@
 			(justify right bottom)
 		)
 		(uuid "a63ac474-e475-4443-82cb-b65bfa96b149")
+	)
+	(text "Fluke 884x Continuity Buzzer"
+		(exclude_from_sim no)
+		(at 348.488 242.824 0)
+		(effects
+			(font
+				(size 3 3)
+			)
+		)
+		(uuid "b1b13e88-2df0-4bbc-bb3c-c147811d9106")
 	)
 	(text "Crystal"
 		(exclude_from_sim no)
@@ -12447,7 +12457,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 102.87 90)
 			(effects
 				(font
@@ -12482,7 +12492,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 105.41 0)
 			(effects
 				(font
@@ -13203,7 +13213,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 232.41 90)
 			(effects
 				(font
@@ -13238,7 +13248,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 234.95 0)
 			(effects
 				(font
@@ -13608,7 +13618,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 179.07 90)
 			(effects
 				(font
@@ -13643,7 +13653,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 181.61 0)
 			(effects
 				(font
@@ -14370,7 +14380,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 163.83 90)
 			(effects
 				(font
@@ -14405,7 +14415,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 166.37 0)
 			(effects
 				(font
@@ -14592,7 +14602,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 186.69 90)
 			(effects
 				(font
@@ -14627,7 +14637,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 189.23 0)
 			(effects
 				(font
@@ -14764,7 +14774,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 156.21 90)
 			(effects
 				(font
@@ -14799,7 +14809,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 158.75 0)
 			(effects
 				(font
@@ -15256,7 +15266,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 209.55 90)
 			(effects
 				(font
@@ -15291,7 +15301,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 212.09 0)
 			(effects
 				(font
@@ -15341,7 +15351,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 125.73 90)
 			(effects
 				(font
@@ -15376,7 +15386,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 128.27 0)
 			(effects
 				(font
@@ -15839,7 +15849,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 95.25 90)
 			(effects
 				(font
@@ -15874,7 +15884,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 97.79 0)
 			(effects
 				(font
@@ -15924,7 +15934,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 224.79 90)
 			(effects
 				(font
@@ -15959,7 +15969,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 227.33 0)
 			(effects
 				(font
@@ -16227,7 +16237,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 171.45 90)
 			(effects
 				(font
@@ -16262,7 +16272,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 173.99 0)
 			(effects
 				(font
@@ -16312,7 +16322,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 110.49 90)
 			(effects
 				(font
@@ -16347,7 +16357,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 113.03 0)
 			(effects
 				(font
@@ -17339,7 +17349,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 201.93 90)
 			(effects
 				(font
@@ -17374,7 +17384,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 204.47 0)
 			(effects
 				(font
@@ -17561,7 +17571,7 @@
 	)
 	(symbol
 		(lib_id "misc:BAT54CDW")
-		(at 52.07 147.32 0)
+		(at 160.02 53.34 0)
 		(mirror y)
 		(unit 4)
 		(exclude_from_sim no)
@@ -17570,7 +17580,7 @@
 		(dnp no)
 		(uuid "7ff0a596-c6ee-4c37-b034-3c63c89a00e3")
 		(property "Reference" "D2"
-			(at 58.928 145.796 0)
+			(at 166.878 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17578,7 +17588,7 @@
 			)
 		)
 		(property "Value" "BAT54CDW"
-			(at 52.3875 143.51 0)
+			(at 160.3375 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17587,7 +17597,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 52.07 151.765 0)
+			(at 160.02 57.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17596,7 +17606,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BAT54TW_ADW_CDW_SDW_BRW.pdf"
-			(at 52.07 144.78 0)
+			(at 160.02 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17605,7 +17615,7 @@
 			)
 		)
 		(property "Description" "Schottky diode array 2 pair Com C, SOT-363"
-			(at 52.07 147.32 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17614,7 +17624,7 @@
 			)
 		)
 		(property "LCSC" "C5240639"
-			(at 52.07 147.32 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17623,7 +17633,7 @@
 			)
 		)
 		(property "Field-1" ""
-			(at 52.07 147.32 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18150,7 +18160,7 @@
 	)
 	(symbol
 		(lib_id "misc:BAT54CDW")
-		(at 148.59 261.62 0)
+		(at 52.07 147.32 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18159,7 +18169,7 @@
 		(dnp no)
 		(uuid "86509e96-b57e-41b5-846c-78a6fa350691")
 		(property "Reference" "D2"
-			(at 155.956 260.35 0)
+			(at 59.436 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18167,7 +18177,7 @@
 			)
 		)
 		(property "Value" "BAT54CDW"
-			(at 148.9075 257.81 0)
+			(at 52.3875 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18176,7 +18186,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 148.59 266.065 0)
+			(at 52.07 151.765 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18185,7 +18195,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BAT54TW_ADW_CDW_SDW_BRW.pdf"
-			(at 148.59 259.08 0)
+			(at 52.07 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18194,7 +18204,7 @@
 			)
 		)
 		(property "Description" "Schottky diode array 2 pair Com C, SOT-363"
-			(at 148.59 261.62 0)
+			(at 52.07 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18203,7 +18213,7 @@
 			)
 		)
 		(property "LCSC" "C5240639"
-			(at 148.59 261.62 0)
+			(at 52.07 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18212,7 +18222,7 @@
 			)
 		)
 		(property "Field-1" ""
-			(at 148.59 261.62 0)
+			(at 52.07 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18506,7 +18516,7 @@
 	)
 	(symbol
 		(lib_id "misc:BAT54CDW")
-		(at 160.02 48.26 180)
+		(at 148.59 231.14 180)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18514,7 +18524,7 @@
 		(dnp no)
 		(uuid "89de62bd-3817-48f5-b1e6-9648e6266383")
 		(property "Reference" "D8"
-			(at 163.322 45.974 0)
+			(at 151.892 228.854 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18522,7 +18532,7 @@
 			)
 		)
 		(property "Value" "BAT54CDW"
-			(at 160.3375 44.45 0)
+			(at 148.9075 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18531,7 +18541,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 160.02 43.815 0)
+			(at 148.59 226.695 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18540,7 +18550,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BAT54TW_ADW_CDW_SDW_BRW.pdf"
-			(at 160.02 50.8 0)
+			(at 148.59 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18549,7 +18559,7 @@
 			)
 		)
 		(property "Description" "Schottky diode array 2 pair Com C, SOT-363"
-			(at 160.02 48.26 0)
+			(at 148.59 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18558,7 +18568,7 @@
 			)
 		)
 		(property "LCSC" "C5240639"
-			(at 160.02 48.26 0)
+			(at 148.59 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18567,7 +18577,7 @@
 			)
 		)
 		(property "Field-1" ""
-			(at 160.02 48.26 0)
+			(at 148.59 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18876,7 +18886,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "95d5d021-f45b-4b75-a155-2daad27bc167")
-		(property "Reference" "R19"
+		(property "Reference" "R18"
 			(at 36.83 148.59 90)
 			(effects
 				(font
@@ -18884,7 +18894,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 148.59 90)
 			(effects
 				(font
@@ -18919,7 +18929,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 151.13 0)
 			(effects
 				(font
@@ -18946,7 +18956,7 @@
 		(instances
 			(project "fluke_884x_continuity_buzzer"
 				(path "/0a658508-3bc2-470d-ae41-ab6efe95ba55"
-					(reference "R19")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -18969,7 +18979,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 118.11 90)
 			(effects
 				(font
@@ -19004,7 +19014,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 120.65 0)
 			(effects
 				(font
@@ -19159,7 +19169,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 194.31 90)
 			(effects
 				(font
@@ -19194,7 +19204,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 196.85 0)
 			(effects
 				(font
@@ -20110,7 +20120,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 217.17 90)
 			(effects
 				(font
@@ -20145,7 +20155,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 219.71 0)
 			(effects
 				(font
@@ -20647,7 +20657,7 @@
 	)
 	(symbol
 		(lib_id "misc:BAT54CDW")
-		(at 160.02 53.34 180)
+		(at 148.59 236.22 180)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20655,7 +20665,7 @@
 		(dnp no)
 		(uuid "cd6071ca-47de-488a-b73f-84e97e08a96d")
 		(property "Reference" "D8"
-			(at 162.814 50.292 0)
+			(at 151.384 233.172 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20663,7 +20673,7 @@
 			)
 		)
 		(property "Value" "BAT54CDW"
-			(at 160.3375 49.53 0)
+			(at 148.9075 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20672,7 +20682,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 160.02 48.895 0)
+			(at 148.59 231.775 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20681,7 +20691,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BAT54TW_ADW_CDW_SDW_BRW.pdf"
-			(at 160.02 55.88 0)
+			(at 148.59 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20690,7 +20700,7 @@
 			)
 		)
 		(property "Description" "Schottky diode array 2 pair Com C, SOT-363"
-			(at 160.02 53.34 0)
+			(at 148.59 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20699,7 +20709,7 @@
 			)
 		)
 		(property "LCSC" "C5240639"
-			(at 160.02 53.34 0)
+			(at 148.59 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20708,7 +20718,7 @@
 			)
 		)
 		(property "Field-1" ""
-			(at 160.02 53.34 0)
+			(at 148.59 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21376,7 +21386,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eaf54fc2-fb0a-4106-862a-e89df2ea208b")
-		(property "Reference" "R21"
+		(property "Reference" "R19"
 			(at 36.83 133.35 90)
 			(effects
 				(font
@@ -21384,7 +21394,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 133.35 90)
 			(effects
 				(font
@@ -21419,7 +21429,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 135.89 0)
 			(effects
 				(font
@@ -21446,7 +21456,7 @@
 		(instances
 			(project "fluke_884x_continuity_buzzer"
 				(path "/0a658508-3bc2-470d-ae41-ab6efe95ba55"
-					(reference "R21")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -21462,7 +21472,7 @@
 		(dnp no)
 		(uuid "eb4c00a2-b87c-47ea-90a2-8b559c7d466d")
 		(property "Reference" "TP1"
-			(at 170.18 60.325 0)
+			(at 175.768 59.436 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21595,7 +21605,7 @@
 	)
 	(symbol
 		(lib_id "misc:BAT54CDW")
-		(at 148.59 255.27 0)
+		(at 160.02 48.26 0)
 		(mirror y)
 		(unit 3)
 		(exclude_from_sim no)
@@ -21604,7 +21614,7 @@
 		(dnp no)
 		(uuid "f945c0fc-fd50-4bc1-829b-14241915cd2a")
 		(property "Reference" "D2"
-			(at 155.448 253.746 0)
+			(at 166.878 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21612,7 +21622,7 @@
 			)
 		)
 		(property "Value" "BAT54CDW"
-			(at 148.9075 251.46 0)
+			(at 160.3375 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21621,7 +21631,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 148.59 259.715 0)
+			(at 160.02 52.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21630,7 +21640,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BAT54TW_ADW_CDW_SDW_BRW.pdf"
-			(at 148.59 252.73 0)
+			(at 160.02 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21639,7 +21649,7 @@
 			)
 		)
 		(property "Description" "Schottky diode array 2 pair Com C, SOT-363"
-			(at 148.59 255.27 0)
+			(at 160.02 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21648,7 +21658,7 @@
 			)
 		)
 		(property "LCSC" "C5240639"
-			(at 148.59 255.27 0)
+			(at 160.02 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21657,7 +21667,7 @@
 			)
 		)
 		(property "Field-1" ""
-			(at 148.59 255.27 0)
+			(at 160.02 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21834,7 +21844,7 @@
 				)
 			)
 		)
-		(property "Value" "270k"
+		(property "Value" "200k"
 			(at 43.18 140.97 90)
 			(effects
 				(font
@@ -21869,7 +21879,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25550"
+		(property "LCSC" "C25764"
 			(at 40.64 143.51 0)
 			(effects
 				(font

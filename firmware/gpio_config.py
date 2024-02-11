@@ -37,6 +37,10 @@ PIN_G0 = const(23)
 PIN_G1 = const(24)
 PIN_PE = const(25)
 
+# Control of the 74LVC8T245 level shifter for the keyboard signals.
+PIN_RL_DIR = const(26)  # High for A=>B (read from meter), Low for B=>A (force keypad signals)
+PIN_RL_OE_n = const(27) # Low to enable the 74LVC8T245 outputs.
+
 # Two GPIO pins are used to drive the piezo buzzer.
 PIN_BUZZER1 = const(28)
 PIN_BUZZER2 = const(29)
@@ -48,8 +52,10 @@ def initialize_pins():
     # Set all the GPIO pins to inputs with pull-up resistors.
     for pin in range(26):
         Pin(pin, Pin.IN, Pin.PULL_DOWN)
-    # set the VOLTAGE_SELECT register to 1 for 1.8V thresholds.
-    mem32[0x4001_c000] = 1
+    
+    # Set the RL_DIR and RL_OE_n pins to outputs.
+    Pin(PIN_RL_DIR, Pin.OUT).value(1)   # Set the direction to A=>B (read from meter)
+    Pin(PIN_RL_OE_n, Pin.OUT).value(0)  # Enable the 74LVC8T245 outputs so we can read the keyboard matrix.
     
     # Set the piezo buzzer pins to outputs.
     Pin(PIN_BUZZER1, Pin.OUT).value(0)
