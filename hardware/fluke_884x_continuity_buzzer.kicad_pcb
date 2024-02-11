@@ -8143,7 +8143,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8381,7 +8381,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11643,7 +11643,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11881,7 +11881,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12371,7 +12371,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12609,7 +12609,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12847,7 +12847,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15168,7 +15168,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15681,7 +15681,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15919,7 +15919,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16182,7 +16182,7 @@
 			)
 		)
 		(property ki_fp_filters "SOT?363*")
-		(path "/f945c0fc-fd50-4bc1-829b-14241915cd2a")
+		(path "/7ff0a596-c6ee-4c37-b034-3c63c89a00e3")
 		(sheetname "Root")
 		(sheetfile "fluke_884x_continuity_buzzer.kicad_sch")
 		(attr smd)
@@ -16439,7 +16439,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17845,7 +17845,7 @@
 			)
 		)
 		(property ki_fp_filters "SOT?363*")
-		(path "/c23288c2-3c8c-42c8-8dd3-870822438621")
+		(path "/85acb73e-7614-47a8-a98c-b9b9e7e917cf")
 		(sheetname "Root")
 		(sheetfile "fluke_884x_continuity_buzzer.kicad_sch")
 		(attr smd)
@@ -18102,7 +18102,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18340,7 +18340,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18578,7 +18578,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18816,7 +18816,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19336,7 +19336,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19574,7 +19574,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19812,7 +19812,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20563,7 +20563,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25790"
+		(property "LCSC" "C25550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
