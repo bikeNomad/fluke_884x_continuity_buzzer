@@ -106,8 +106,12 @@ def drive_keypad(strobe_number, value):
         return
     rl_value = rl_encode(value)
     new_pin_value = (pin_value & ~RL_MASK) | rl_value
-    # Disable the 74LVC8T245 outputs so we can drive the keyboard matrix.
-    rl_oe_n.value(1)
     # Set the direction to B=>A (force keypad signals)
     rl_dir.value(0)
-    write_gpio_pins(new_pin_value, RL_MASK)
+    write_gpio_pins(RL_MASK, new_pin_value)
+
+
+def release_keypad():
+    # Set the direction to A=>B (read from meter)
+    rl_dir.value(1)
+    dont_write_gpio_pins(RL_MASK)

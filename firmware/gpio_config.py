@@ -78,7 +78,7 @@ def read_gpio_pins() -> int:
 
 # Write a selected subset of the GPIO pins.
 # The mask selects which bits to write.
-def write_gpio_pins(value, mask) -> None:
+def write_gpio_pins(mask, value) -> None:
     # set the GPIO output direction to output
     mem32[GPIO_OE_SET_ADDR] = mask
     mem32[GPIO_OUT_ADDR] = value
