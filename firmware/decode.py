@@ -10,7 +10,8 @@ import array
 import pwm
 
 # Delay in microseconds to wait after a digit line goes high before reading the GPIO pin states.
-_EDGE_DELAY_US = const(10)
+# Digit lines are high for 600us, then low for 4ms.
+_EDGE_DELAY_US = const(200)
 # Special segments that indicate that continuity is not present on the Fluke 8840A/8842A multimeter.
 _NO_CONTINUITY = set(("OVER", "ERROR", "CAL", "mA", "mV", "DC", "AC", "M", "k"))
 # Maximum resistance value that indicates continuity
@@ -57,8 +58,15 @@ SEGMENT_LOOKUP = {
 
 # Digit 1 is the +1 or -1 digit.
 SEGMENT_LOOKUP_DIGIT_1 = {
-    (PA | PB | PC | PD): 1,  # positive 1
-    (PA | PC | PD): -1,  # negative 1
+    (PA | PB | PC): 1,  # positive 1
+    (PA | PC): 1,  # negative 1
+    (PB | PC): 0, # positive 0
+    (PC): 0, # negative 0
+}
+
+SIGN_LOOKUP_DIGIT_1 = {
+    (PB | PC): 1,  # positive
+    (PC): -1,  # negative
 }
 
 # Lookup table by digit number and GPIO pin number to map the masked 32-bit GPIO port reading
@@ -104,6 +112,18 @@ SPECIAL_LOOKUP = {
     ),
 }
 
+FORMAT_LOOKUP = [
+    [('m', 'V', 'DC'), 'mV DC'],
+    [('m', 'V', 'AC'), 'mV AC'],
+    [('V', 'DC'), 'V DC'],
+    [('V', 'AC'), 'V AC'],
+    [('k', 'Ω'), 'kΩ'],
+    [('M', 'Ω'), 'MΩ'],
+    [('Ω'), 'Ω'],
+    [('mA', 'DC'), 'mA DC'],
+    [('mA', 'AC'), 'mA AC'],
+]
+
 
 # Given a 32-bit GPIO port reading, return the currently-displayed digit on the 7-segment display.
 # Assumes that the GPIO port reading is valid and that only one digit is active at a time.
@@ -141,6 +161,19 @@ def read_specials(digit_number: int, value) -> set:
     return retval
 
 
+# Format the specials set as a string, giving the range and units.
+# Outputs strings like:
+# "V DC"
+# "V AC"
+# "Ω", "kΩ", "MΩ"
+# "mA DC"
+# "mA AC"
+def format_specials(specials: set) -> str:
+    for pattern, result in FORMAT_LOOKUP:
+        if specials.issuperset(pattern):
+            return result
+
+
 # Given a 32-bit GPIO port reading, return the currently-active digit number (G0-G7) on the 7-segment display.
 # Assumes that the GPIO port reading is valid and that only one digit is active at a time.
 # Assumes that digit lines are active-high.
@@ -162,18 +195,15 @@ def read_all_digit_gpios_into(arr: array.array):
         arr[digit_number] = read_gpio_pins()
 
 
-def make_float(digits, decimal_point_position):
+def make_float(digits, decimal_point_position, sign):
     # build a floating point number from the digits and decimal point position
-    negative = digits[1] < 0
     full_number = 0
-    for digit_number in range(1, 6):
+    for digit_number in range(1, 7):
         full_number += abs(digits[digit_number])
         full_number *= 10
     # Now scale the number to the right place using decimal_point_position
-    full_number /= 10 ** (6 - decimal_point_position)
-    if negative:
-        full_number = -full_number
-    return full_number
+    full_number /= 10 ** (7 - decimal_point_position)
+    return full_number * sign
 
 
 # Generator that reads the GPIO pin states when each of the G0-G7 digit lines becomes active,
@@ -190,8 +220,9 @@ def read_all_digit_gpios(gpio_values, digits, specials):
                 decimal_point_position = digit_number
             sp = read_specials(digit_number, value)
             specials.update(sp)
-            print(f"{digit_number} {value:08x} {digit} {sp}")
-        yield make_float(digits, decimal_point_position), specials
+            # print(f"{digit_number} {value:08x} {digit} {sp}")
+        sign = SIGN_LOOKUP_DIGIT_1.get(gpio_values[1] & (PB | PC), 1)
+        yield make_float(digits, decimal_point_position, sign), specials
 
 
 # Return True if the given value is a valid continuity reading.
@@ -200,6 +231,13 @@ def has_continuity(value: float, specials: set):
         return False
     return value <= _CONTINUITY_THRESHOLD
 
+def print_result(value, specials, cont):
+    if 'OVER' in specials:
+        print(f"OVER {format_specials(specials)}")
+    elif 'ERROR' in specials:
+        print(f"ERROR {value}")
+    else:
+        print(f"{value:5f} {format_specials(specials)}{' *' if cont else ''}")
 
 def main_loop():
     gpio_values = array.array("L", [0, 0, 0, 0, 0, 0, 0, 0])
@@ -208,15 +246,10 @@ def main_loop():
     )  # signed because of possible leading -1
     specials = set()
     for value, specials in read_all_digit_gpios(gpio_values, digits, specials):
-        print(value, specials)
-        if has_continuity(value, specials):
-            # print("Continuity detected")
-            # pwm.enable_pwm()  # buzzer ON
-            sleep_ms(100)
+        cont = has_continuity(value, specials)
+        if cont:
+            pwm.enable_pwm()  # buzzer ON
         else:
             pwm.disable_pwm()  # buzzer OFF
 
-        sleep_ms(1000)
-
-
-pwm.initialize_pwm()
+        print_result(value, specials, cont)

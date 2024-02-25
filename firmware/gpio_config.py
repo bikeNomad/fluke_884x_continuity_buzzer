@@ -59,7 +59,7 @@ GPIO_OE_CLEAR_ADDR = const(0xD0000028)
 def initialize_pins():
     # Set all the GPIO pins to inputs with pull-up resistors.
     for pin in range(26):
-        Pin(pin, Pin.IN, Pin.PULL_DOWN)
+        Pin(pin, Pin.IN, 0)
 
     # Set the RL_DIR and RL_OE_n pins to outputs.
     Pin(PIN_RL_DIR, Pin.OUT).value(1)  # Set the direction to A=>B (read from meter)
