@@ -86,9 +86,9 @@ SPECIAL_LOOKUP = {
     ),
     1: (
         (PS1 | PS2 | PS3),  # mask
-        (PS1, "S"),  # slow
-        (PS2, "M"),  # medium
-        (PS3, "F"),  # fast
+        (PS1, "rS"),  # slow
+        (PS2, "rM"),  # medium
+        (PS3, "rF"),  # fast
     ),
     2: (PS1, (PS1, "OVER")),
     3: (PS1, (PS1, "ERROR")),
