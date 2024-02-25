@@ -9816,7 +9816,7 @@
 		)
 		(uuid "11443f41-46bf-48eb-93c3-8d9480e16942")
 	)
-	(text "F1-F2 are from a 4.5VAC transformer whose center-tap is tied to +5V.\nThe Pxx and Gxx lines are 30V logic. All 19 of these lines are clamped to 3.3V\nusing the 270k resistors R1-R19 and their associated Schottky diodes.\nThe S0-S2 lines are inverted, current-sinking,\n5V versions of G0-G2 used for scanning the key matrix columns.\nSince these duplicate G0-G2, we don't bother watching them also.\nThe RL0-RL6 lines are 5V logic row lines coming from the key matrix."
+	(text "F1-F2 are from a 4.5VAC transformer whose center-tap is tied to +5V.\nThe Pxx and Gxx lines are 30V logic. All 19 of these lines are clamped to 3.3V\nusing the 200k resistors R1-R19 and their associated Schottky diodes.\nThe S0-S2 lines are inverted, current-sinking,\n5V versions of G0-G2 used for scanning the key matrix columns.\nSince these duplicate G0-G2, we don't bother watching them also.\nThe RL0-RL6 lines are 5V logic row lines coming from the key matrix."
 		(exclude_from_sim no)
 		(at 16.51 260.985 0)
 		(effects
