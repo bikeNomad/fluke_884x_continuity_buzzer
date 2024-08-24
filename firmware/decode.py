@@ -2,12 +2,13 @@
 # Digit lines G0-G7 are active-high, with a period of 4.6ms
 # Segment lines Px are active-high.
 # Switch return lines Sx are active-low and are synced to G0-G3.
-from time import sleep_ms, sleep_us
+from time import sleep_us
 import gpio_config
 from gpio_config import read_gpio_pins, BIT
 from micropython import const
 import array
-import pwm
+from pwm import enable_pwm
+import keypad
 
 # Delay in microseconds to wait after a digit line goes high before reading the GPIO pin states.
 # Digit lines are high for 600us, then low for 4ms.
@@ -60,8 +61,8 @@ SEGMENT_LOOKUP = {
 SEGMENT_LOOKUP_DIGIT_1 = {
     (PA | PB | PC): 1,  # positive 1
     (PA | PC): 1,  # negative 1
-    (PB | PC): 0, # positive 0
-    (PC): 0, # negative 0
+    (PB | PC): 0,  # positive 0
+    (PC): 0,  # negative 0
 }
 
 SIGN_LOOKUP_DIGIT_1 = {
@@ -113,15 +114,15 @@ SPECIAL_LOOKUP = {
 }
 
 FORMAT_LOOKUP = [
-    [('m', 'V', 'DC'), 'mV DC'],
-    [('m', 'V', 'AC'), 'mV AC'],
-    [('V', 'DC'), 'V DC'],
-    [('V', 'AC'), 'V AC'],
-    [('k', 'Ω'), 'kΩ'],
-    [('M', 'Ω'), 'MΩ'],
-    [('Ω'), 'Ω'],
-    [('mA', 'DC'), 'mA DC'],
-    [('mA', 'AC'), 'mA AC'],
+    [("m", "V", "DC"), "mV DC"],
+    [("m", "V", "AC"), "mV AC"],
+    [("V", "DC"), "V DC"],
+    [("V", "AC"), "V AC"],
+    [("k", "Ω"), "kΩ"],
+    [("M", "Ω"), "MΩ"],
+    [("Ω"), "Ω"],
+    [("mA", "DC"), "mA DC"],
+    [("mA", "AC"), "mA AC"],
 ]
 
 
@@ -231,15 +232,23 @@ def has_continuity(value: float, specials: set):
         return False
     return value <= _CONTINUITY_THRESHOLD
 
+
 def print_result(value, specials, cont):
-    if 'OVER' in specials:
+    if "OVER" in specials:
         print(f"OVER {format_specials(specials)}")
-    elif 'ERROR' in specials:
+    elif "ERROR" in specials:
         print(f"ERROR {value}")
     else:
         print(f"{value:5f} {format_specials(specials)}{' *' if cont else ''}")
 
+
+gpio_values = None
+digits = None
+specials = None
+
+
 def main_loop():
+    global gpio_values, digits, specials
     gpio_values = array.array("L", [0, 0, 0, 0, 0, 0, 0, 0])
     digits = array.array(
         "b", [0, 0, 0, 0, 0, 0, 0, 0]
@@ -247,9 +256,7 @@ def main_loop():
     specials = set()
     for value, specials in read_all_digit_gpios(gpio_values, digits, specials):
         cont = has_continuity(value, specials)
-        if cont:
-            pwm.enable_pwm()  # buzzer ON
-        else:
-            pwm.disable_pwm()  # buzzer OFF
-
-        print_result(value, specials, cont)
+        enable_pwm(cont)
+        # print_result(value, specials, cont)
+        if keypad.interpret(gpio_values):
+            print(f"Pressed {keypad.pressed_keys}")

@@ -36,6 +36,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -48,6 +49,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -60,6 +62,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -157,7 +160,7 @@
 		(remove_unused_layers no)
 		(uuid "633eb60d-e2e3-433c-aca1-6231ab073121")
 	)
-	(model "${KICAD6_3DMODEL_DIR}/Buzzer_Beeper.3dshapes/Buzzer_12x9.5RM7.6.wrl"
+	(model "${KIPRJMOD}/models/buzzer v1.step"
 		(offset
 			(xyz 0 0 0)
 		)

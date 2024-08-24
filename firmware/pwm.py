@@ -15,6 +15,7 @@ pwm2 = None
 # Both of these pins are connected to the piezo buzzer.
 # They are also controlled by PWM slice #6, so we can use them to generate complementary PWM signals.
 
+
 def initialize_pwm():
     global pwm1, pwm2
     if pwm1 is None:
@@ -24,10 +25,11 @@ def initialize_pwm():
         pwm2 = machine.PWM(machine.Pin(PIN_BUZZER2), freq=PWM_FREQUENCY, invert=True)
         pwm2.duty_u16(PWM_DUTY_CYCLE)
 
-    disable_pwm()
+    enable_pwm(False)
 
-def enable_pwm():
-    machine.mem32[PWM_EN] |= 0x40 # enable slice 6
 
-def disable_pwm():
-    machine.mem32[PWM_EN] &= ~0x40 # disable slice 6
+def enable_pwm(enable=True):
+    if enable:
+        machine.mem32[PWM_EN] |= 0x40  # enable slice 6
+    else:
+        machine.mem32[PWM_EN] &= ~0x40  # disable slice 6
