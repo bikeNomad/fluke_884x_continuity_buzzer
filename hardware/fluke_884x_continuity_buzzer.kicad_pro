@@ -6,14 +6,14 @@
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
-        "board_outline_line_width": 0.049999999999999996,
-        "copper_line_width": 0.19999999999999998,
+        "board_outline_line_width": 0.05,
+        "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
         "copper_text_size_v": 1.5,
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
-        "courtyard_line_width": 0.049999999999999996,
+        "courtyard_line_width": 0.05,
         "dimension_precision": 4,
         "dimension_units": 3,
         "dimensions": {
@@ -24,13 +24,13 @@
           "text_position": 0,
           "units_format": 1
         },
-        "fab_line_width": 0.09999999999999999,
+        "fab_line_width": 0.1,
         "fab_text_italic": false,
         "fab_text_size_h": 1.0,
         "fab_text_size_v": 1.0,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
-        "other_line_width": 0.09999999999999999,
+        "other_line_width": 0.1,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
         "other_text_size_v": 1.0,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [],
@@ -74,13 +74,14 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "ignore",
+        "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
@@ -115,15 +116,15 @@
         "min_copper_edge_clearance": 0.3,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.19999999999999998,
-        "min_microvia_drill": 0.09999999999999999,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.7999999999999999,
+        "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.35,
         "min_track_width": 0.15,
-        "min_via_annular_width": 0.09999999999999999,
+        "min_via_annular_width": 0.1,
         "min_via_diameter": 0.6,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -224,7 +225,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "different_unit_net|1524000|2400300|772a9042-15ec-46cf-a14a-9de0178c01e9|e7ca6545-f762-4a94-a16a-4f4fb379c3fb|/0a658508-3bc2-470d-ae41-ab6efe95ba55|/0a658508-3bc2-470d-ae41-ab6efe95ba55|/0a658508-3bc2-470d-ae41-ab6efe95ba55",
+      "pin_not_connected|1524000|2400300|772a9042-15ec-46cf-a14a-9de0178c01e9|00000000-0000-0000-0000-000000000000|/0a658508-3bc2-470d-ae41-ab6efe95ba55|/0a658508-3bc2-470d-ae41-ab6efe95ba55|",
+      "pin_not_connected|1524000|2451100|e7ca6545-f762-4a94-a16a-4f4fb379c3fb|00000000-0000-0000-0000-000000000000|/0a658508-3bc2-470d-ae41-ab6efe95ba55|/0a658508-3bc2-470d-ae41-ab6efe95ba55|",
+      "pin_not_connected|1524000|2501900|ec53a797-1bf4-4b89-b739-41d3a18f0a4b|00000000-0000-0000-0000-000000000000|/0a658508-3bc2-470d-ae41-ab6efe95ba55|/0a658508-3bc2-470d-ae41-ab6efe95ba55|"
+    ],
     "meta": {
       "version": 0
     },
@@ -439,7 +445,9 @@
       "RP2040_minimal"
     ],
     "pinned_symbol_libs": [
-      "misc"
+      "misc",
+      "MCU_RaspberryPi_RP2040",
+      "RP2040_minimal"
     ]
   },
   "meta": {
@@ -715,6 +723,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
