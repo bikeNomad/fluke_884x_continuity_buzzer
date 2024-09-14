@@ -8,7 +8,6 @@ from gpio_config import read_gpio_pins, BIT
 from micropython import const
 import array
 from pwm import enable_pwm
-import keypad
 
 # Delay in microseconds to wait after a digit line goes high before reading the GPIO pin states.
 # Digit lines are high for 600us, then low for 4ms.
@@ -258,5 +257,3 @@ def main_loop():
         cont = has_continuity(value, specials)
         enable_pwm(cont)
         # print_result(value, specials, cont)
-        if keypad.interpret(gpio_values):
-            print(f"Pressed {keypad.pressed_keys}")
