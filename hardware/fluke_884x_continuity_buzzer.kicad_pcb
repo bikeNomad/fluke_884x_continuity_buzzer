@@ -12507,7 +12507,7 @@
 		(path "/624717dc-53f2-42ae-a824-57ec3bc69fc9")
 		(sheetname "Root")
 		(sheetfile "fluke_884x_continuity_buzzer.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -0.7 -0.7)
 			(end 0.7 -0.7)
