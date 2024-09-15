@@ -10,15 +10,8 @@ from machine import Pin, mem32
 # PA-PG are the segment select lines for the 7-segment display and are active-high signals.
 # PDP is the decimal point signal for the 7-segment display and is an active-high signal.
 # PS1-PS3 are the segment select lines for the extra words on the display and are active-high signals.
-PIN_RL3 = const(0)
-PIN_RL5 = const(1)
-PIN_RL2 = const(2)
-PIN_RL4 = const(3)
-PIN_RL6 = const(4)
 PIN_G5 = const(5)
-PIN_RL1 = const(6)
 PIN_G7 = const(7)
-PIN_RL0 = const(8)
 PIN_G6 = const(9)
 PIN_G2 = const(10)
 PIN_PDP = const(11)
@@ -36,11 +29,6 @@ PIN_PF = const(22)
 PIN_G0 = const(23)
 PIN_G1 = const(24)
 PIN_PE = const(25)
-
-# Control of the 74LVC8T245 level shifter for the keyboard signals.
-# High for A=>B (read from meter), Low for B=>A (force keypad signals)
-PIN_RL_DIR = const(26)
-PIN_RL_OE_n = const(27)  # Low to enable the 74LVC8T245 outputs.
 
 # Two GPIO pins are used to drive the piezo buzzer.
 PIN_BUZZER1 = const(28)
@@ -60,11 +48,6 @@ def initialize_pins():
     # Set all the GPIO pins to inputs with pull-up resistors.
     for pin in range(26):
         Pin(pin, Pin.IN, 0)
-
-    # Set the RL_DIR and RL_OE_n pins to outputs.
-    Pin(PIN_RL_DIR, Pin.OUT).value(1)  # Set the direction to A=>B (read from meter)
-    # Enable the 74LVC8T245 outputs so we can read the keyboard matrix.
-    Pin(PIN_RL_OE_n, Pin.OUT).value(0)
 
     # Set the piezo buzzer pins to outputs.
     Pin(PIN_BUZZER1, Pin.OUT).value(0)
