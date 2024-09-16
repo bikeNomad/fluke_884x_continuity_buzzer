@@ -6,8 +6,8 @@
 	(paper "USLedger")
 	(title_block
 		(title "Fluke 884x Continuity Buzzer")
-		(date "2024-08-24")
-		(rev "3")
+		(date "2024-09-15")
+		(rev "4")
 		(company "Ned Konz")
 	)
 	(lib_symbols
