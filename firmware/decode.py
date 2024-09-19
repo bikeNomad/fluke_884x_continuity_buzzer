@@ -13,9 +13,9 @@ from pwm import enable_pwm
 # Digit lines are high for 600us, then low for 4ms.
 _EDGE_DELAY_US = const(200)
 # Special segments that indicate that continuity is not present on the Fluke 8840A/8842A multimeter.
-_NO_CONTINUITY = set(("OVER", "ERROR", "CAL", "mA", "mV", "DC", "AC", "M", "k"))
+NO_CONTINUITY = set(("OVER", "ERROR", "TEST", "CAL", "mA", "mV", "DC", "AC", "M", "k"))
 # Maximum resistance value that indicates continuity
-_CONTINUITY_THRESHOLD = 10.0
+CONTINUITY_THRESHOLD = 10.0
 
 
 # import all the PIN_ constants from gpio_config.py into this module's namespace
@@ -125,12 +125,12 @@ FORMAT_LOOKUP = [
 ]
 
 
-# Given a 32-bit GPIO port reading, return the currently-displayed digit on the 7-segment display.
-# Assumes that the GPIO port reading is valid and that only one digit is active at a time.
-# Assumes that segment lines are active-high.
-# @param digit_number: int 0-7 corresponding to G0-G7 active
-# @param value: int reading from GPIO port
 def read_digit(digit_number, value) -> int:
+    """Given a 32-bit GPIO port reading, return the currently-displayed digit on the 7-segment display.
+    Assumes that the GPIO port reading is valid and that only one digit is active at a time.
+    Assumes that segment lines are active-high.
+    @param digit_number: int 0-7 corresponding to G0-G7 active
+    @param value: int reading from GPIO port"""
     segment_lines = value & SEGMENT_MASK
     # look up the digit in the table
     return (
@@ -140,16 +140,17 @@ def read_digit(digit_number, value) -> int:
     )
 
 
-# Return True if the decimal point is active for the given digit number and GPIO port reading.
-# The only valid digit numbers are 1-6.
 def read_dp(digit_number, value) -> bool:
+    """Return True if the decimal point is active for the given digit number and GPIO port reading.
+    The only valid digit numbers are 1-6."""
     if 1 <= digit_number <= 6:
         return (value & PDP) == PDP  # active-high
     return False
 
 
-# Return a set of strings representing the special segments that are active for the given digit number and GPIO port reading.
 def read_specials(digit_number: int, value) -> set:
+    """Return a set of strings representing the special segments
+    that are active for the given digit number and GPIO port reading."""
     smask, *patterns = SPECIAL_LOOKUP.get(digit_number, (0,))
     retval = set()
     if smask == 0:
@@ -161,30 +162,32 @@ def read_specials(digit_number: int, value) -> set:
     return retval
 
 
-# Format the specials set as a string, giving the range and units.
-# Outputs strings like:
-# "V DC"
-# "V AC"
-# "Ω", "kΩ", "MΩ"
-# "mA DC"
-# "mA AC"
 def format_specials(specials: set) -> str:
+    """Format the specials set as a string, giving the range and units.
+    Outputs strings like:
+    "V DC"
+    "V AC"
+    "Ω", "kΩ", "MΩ"
+    "mA DC"
+    "mA AC"
+    """
     for pattern, result in FORMAT_LOOKUP:
         if specials.issuperset(pattern):
             return result
+    return ""
 
 
-# Given a 32-bit GPIO port reading, return the currently-active digit number (G0-G7) on the 7-segment display.
-# Assumes that the GPIO port reading is valid and that only one digit is active at a time.
-# Assumes that digit lines are active-high.
-def read_digit_number(value):
+def read_digit_number(value) -> int:
+    """Given a 32-bit GPIO port reading, return the currently-active digit number (G0-G7) on the 7-segment display.
+    Assumes that the GPIO port reading is valid and that only one digit is active at a time.
+    Assumes that digit lines are active-high."""
     return DIGIT_LOOKUP[value & DIGIT_MASK]
 
 
-# Read the states of the GPIO pins when each of the G0-G7 digit lines becomes active.
-# Store the results in the given array.
-# Assumes that digit lines are active-high.
 def read_all_digit_gpios_into(arr: array.array):
+    """Read the states of the GPIO pins when each of the G0-G7 digit lines becomes active.
+    Store the results in the given array.
+    Assumes that digit lines are active-high."""
     for digit_number, digit_mask in enumerate((G0, G1, G2, G3, G4, G5, G6, G7)):
         # wait until digit line goes high
         while read_gpio_pins() & digit_mask == 0:
@@ -195,8 +198,8 @@ def read_all_digit_gpios_into(arr: array.array):
         arr[digit_number] = read_gpio_pins()
 
 
-def make_float(digits, decimal_point_position, sign):
-    # build a floating point number from the digits and decimal point position
+def make_float(digits, decimal_point_position, sign) -> float:
+    """Builds a floating point number from the digits and decimal point position"""
     full_number = 0
     for digit_number in range(1, 7):
         full_number += abs(digits[digit_number])
@@ -206,9 +209,9 @@ def make_float(digits, decimal_point_position, sign):
     return full_number * sign
 
 
-# Generator that reads the GPIO pin states when each of the G0-G7 digit lines becomes active,
-# decodes the display, and yields the results.
-def read_all_digit_gpios(gpio_values, digits, specials):
+def read_all_digit_gpios(gpio_values: array.array, digits: array.array, specials: set):
+    """Generator that reads the GPIO pin states when each of the G0-G7 digit lines becomes active,
+    decodes the display, and yields the results."""
     while True:
         specials.clear()
         decimal_point_position = 0
@@ -225,14 +228,15 @@ def read_all_digit_gpios(gpio_values, digits, specials):
         yield make_float(digits, decimal_point_position, sign), specials
 
 
-# Return True if the given value is a valid continuity reading.
 def has_continuity(value: float, specials: set):
-    if not specials.isdisjoint(_NO_CONTINUITY):
+    """Return True if the given value is a valid continuity reading."""
+    if not specials.isdisjoint(NO_CONTINUITY):
         return False
-    return value <= _CONTINUITY_THRESHOLD
+    return value <= CONTINUITY_THRESHOLD
 
 
-def print_result(value, specials, cont):
+def print_result(value, specials: set, cont: bool):
+    """For debug purposes, print the decoded value and specials."""
     if "OVER" in specials:
         print(f"OVER {format_specials(specials)}")
     elif "ERROR" in specials:
@@ -241,13 +245,13 @@ def print_result(value, specials, cont):
         print(f"{value:5f} {format_specials(specials)}{' *' if cont else ''}")
 
 
-gpio_values = None
-digits = None
-specials = None
+# gpio_values = None
+# digits = None
+# specials = None
 
 
 def main_loop():
-    global gpio_values, digits, specials
+    # global gpio_values, digits, specials
     gpio_values = array.array("L", [0, 0, 0, 0, 0, 0, 0, 0])
     digits = array.array(
         "b", [0, 0, 0, 0, 0, 0, 0, 0]
