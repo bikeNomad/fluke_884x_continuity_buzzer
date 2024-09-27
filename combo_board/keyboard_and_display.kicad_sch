@@ -2633,7 +2633,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 120.65 77.47 0)
 			(effects
 				(font
@@ -2703,7 +2703,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 91.44 62.23 0)
 			(effects
 				(font
@@ -2773,7 +2773,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 77.47 77.47 0)
 			(effects
 				(font
@@ -2843,7 +2843,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 105.41 77.47 0)
 			(effects
 				(font
@@ -2914,7 +2914,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm_NumberLabels"
 			(at 58.42 132.08 0)
 			(effects
 				(font
@@ -2987,7 +2987,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 77.47 48.26 0)
 			(effects
 				(font
@@ -3057,7 +3057,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 120.65 48.26 0)
 			(effects
 				(font
@@ -3128,7 +3128,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm_NumberLabels"
 			(at 58.42 187.96 0)
 			(effects
 				(font
@@ -3201,7 +3201,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 91.44 77.47 0)
 			(effects
 				(font
@@ -3271,7 +3271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 91.44 48.26 0)
 			(effects
 				(font
@@ -3341,7 +3341,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 105.41 48.26 0)
 			(effects
 				(font
@@ -3411,7 +3411,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 134.62 48.26 0)
 			(effects
 				(font
@@ -3547,7 +3547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 77.47 62.23 0)
 			(effects
 				(font
@@ -3617,7 +3617,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 120.65 62.23 0)
 			(effects
 				(font
@@ -3687,7 +3687,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 134.62 77.47 0)
 			(effects
 				(font
@@ -3757,7 +3757,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_884x_display"
 			(at 90.17 144.78 0)
 			(effects
 				(font
@@ -3884,7 +3884,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 46.99 48.26 0)
 			(effects
 				(font
@@ -3954,7 +3954,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 105.41 62.23 0)
 			(effects
 				(font
@@ -4024,7 +4024,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 62.23 77.47 0)
 			(effects
 				(font
@@ -4094,7 +4094,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 46.99 77.47 0)
 			(effects
 				(font
@@ -4164,7 +4164,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 46.99 62.23 0)
 			(effects
 				(font
@@ -4234,7 +4234,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 62.23 62.23 0)
 			(effects
 				(font
@@ -4304,7 +4304,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RP2040_minimal:fluke_keypad_contact"
 			(at 62.23 48.26 0)
 			(effects
 				(font
