@@ -446,7 +446,7 @@
     ]
   },
   "meta": {
-    "filename": "fluke_884x_continuity_buzzer.kicad_pro",
+    "filename": "combo_board.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -844,6 +844,14 @@
     [
       "0a658508-3bc2-470d-ae41-ab6efe95ba55",
       "Root"
+    ],
+    [
+      "9dd851ea-1d01-426f-92a0-746a8cebbd7e",
+      "Keyboard and Display"
+    ],
+    [
+      "5f2d20a8-23f4-4637-a2e7-e31f0c1da837",
+      "Connections"
     ]
   ],
   "text_variables": {}
