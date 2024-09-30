@@ -14224,7 +14224,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "RP2040_minimal:USB_Micro-B_Amphenol_10118194_Horizontal"
+		(property "Footprint" "Connector_USB:USB_Micro-B_Molex-105133-0001"
 			(at 312.42 139.7 0)
 			(effects
 				(font

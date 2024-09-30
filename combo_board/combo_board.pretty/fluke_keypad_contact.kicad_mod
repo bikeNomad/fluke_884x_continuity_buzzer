@@ -1,0 +1,192 @@
+(footprint "fluke_keypad_contact"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 4.7 -2.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "2eae5966-b961-473a-b11b-8129571c8906")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "fluke_keypad_contact"
+		(at 0.4 -5.7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "d522e8be-105e-4e82-b9d4-6f92196102cf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b3ece7bf-9312-4bfd-b7f4-3dfbe9e44365")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "558bd36a-26fa-4f83-bfb5-a474e9e257d1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dfcfe793-3371-471f-9b78-495520c99c52")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_circle
+		(center 0 0)
+		(end 3.2 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.Mask")
+		(uuid "9a9c7326-a3ca-4e86-8f38-6d0f875ea9f6")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "Dwgs.User")
+		(uuid "407b40e3-eaec-466a-a510-831621f2c791")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3.2 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "2a97a2af-e72a-40ef-8843-98f6576e2f47")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.4 -4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "6e8a594a-70b3-49da-a988-3f69bd64dab7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd custom
+		(at -2.6 0)
+		(size 0.7655 0.7655)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 2.106233 2.909135) (xy 1.942468 2.881932) (xy 1.621993 2.795252) (xy 1.31331 2.673056) (xy 1.02034 2.516897)
+					(xy 0.746805 2.328759) (xy 0.496181 2.111033) (xy 0.271653 1.866484) (xy 0.076072 1.598221) (xy -0.088076 1.309651)
+					(xy -0.218705 1.004441) (xy -0.314156 0.686469) (xy -0.373216 0.359775) (xy -0.395135 0.028509)
+					(xy -0.379633 -0.303118) (xy -0.326908 -0.630895) (xy -0.237631 -0.950655) (xy -0.112934 -1.258336)
+					(xy 0.045596 -1.55003) (xy 0.235947 -1.822029) (xy 0.4557 -2.070879) (xy 0.702062 -2.293416) (xy 0.971904 -2.486814)
+					(xy 1.261796 -2.648615) (xy 1.568056 -2.776764) (xy 1.886792 -2.869632) (xy 2.1 -2.9)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "8cf647b1-add3-401a-aacc-ba1f524333ba")
+	)
+	(pad "2" smd custom
+		(at 2.55 0 180)
+		(size 0.7655 0.7655)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 2.106233 2.909135) (xy 1.942468 2.881932) (xy 1.621993 2.795252) (xy 1.31331 2.673056) (xy 1.02034 2.516897)
+					(xy 0.746805 2.328759) (xy 0.496181 2.111033) (xy 0.271653 1.866484) (xy 0.076072 1.598221) (xy -0.088076 1.309651)
+					(xy -0.218705 1.004441) (xy -0.314156 0.686469) (xy -0.373216 0.359775) (xy -0.395135 0.028509)
+					(xy -0.379633 -0.303118) (xy -0.326908 -0.630895) (xy -0.237631 -0.950655) (xy -0.112934 -1.258336)
+					(xy 0.045596 -1.55003) (xy 0.235947 -1.822029) (xy 0.4557 -2.070879) (xy 0.702062 -2.293416) (xy 0.971904 -2.486814)
+					(xy 1.261796 -2.648615) (xy 1.568056 -2.776764) (xy 1.886792 -2.869632) (xy 2.1 -2.899999)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "f70d8008-d966-45d2-8c6a-90f87c9ee2d0")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "84cf116a-3ae7-4356-b4d0-075a4ba8940e")
+		(name "button")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints not_allowed)
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 0.4 -3.15) (xy 0.4 3.15) (xy -0.45 3.15) (xy -0.4 -3.15)
+			)
+		)
+	)
+)
