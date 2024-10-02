@@ -304,7 +304,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/4dc5fd81-04ac-4817-8070-09d8e4ea1f60")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -504,7 +504,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/aec908e3-9752-4523-ae26-7f19c5f978c0")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -704,7 +704,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/a14b2603-0b20-49e7-a098-65fc0a9db954")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -904,7 +904,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/f97108f2-5830-4f94-a082-37fbdbc72dee")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -1104,7 +1104,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/1558b15f-c87f-4f1c-93c8-e55a2d824388")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -1304,7 +1304,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/aecdd971-0b69-4ff3-a3c4-d5df4d7b1e58")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -1504,7 +1504,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/565a7fb7-aef4-4020-ab07-976aa34dbfac")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -1704,7 +1704,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/3b7611f8-e673-4f5a-9260-712621eda7d2")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -1904,7 +1904,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/c822cf07-8cbe-4bcf-86f4-b1bb2a2eecf7")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -2104,7 +2104,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/6a27d26c-d794-40eb-b085-84463942aeed")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -2304,7 +2304,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/9a5154a7-7ba3-4d33-9a83-748bd4506bea")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -2504,7 +2504,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/3855a426-dba2-44bb-8f99-2e19b10977cd")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -2704,7 +2704,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/e3e9aecf-1450-410c-a6db-bacc7f226ca9")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -2904,7 +2904,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/ebac334f-81a0-48ab-9a4e-b34e5f155445")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -3104,7 +3104,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/9cbf8318-4575-4349-ae34-367620cdff2e")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -3304,7 +3304,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/98f6882f-ace9-4763-a9d4-45725ec9ea17")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -3505,7 +3505,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/c80d1b64-815f-4c93-87a2-375637a61e6f")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_rect
 			(start -61.75 -19)
 			(end 62 20)
@@ -3864,7 +3864,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/f7201e00-7805-4b34-97ec-fd4fccedea32")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -4064,7 +4064,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/b3b1ec84-ea58-4add-822d-1b3ed0f171cf")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -4264,7 +4264,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/db0ec291-b7bd-45d3-8577-7417ff4c93b0")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -4464,7 +4464,7 @@
 		(path "/9dd851ea-1d01-426f-92a0-746a8cebbd7e/d0e5f406-57b8-421b-bff7-15c2753da6c7")
 		(sheetname "Keyboard and Display")
 		(sheetfile "keyboard_and_display.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -15328,7 +15328,7 @@
 		(path "/624717dc-53f2-42ae-a824-57ec3bc69fc9")
 		(sheetname "Root")
 		(sheetfile "combo_board.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 0.7 0.7)
 			(end -0.7 0.7)
@@ -16788,7 +16788,7 @@
 		(path "/3794a350-da6d-45f4-afef-37e9f2031139")
 		(sheetname "Root")
 		(sheetfile "combo_board.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 0.7 0.7)
 			(end -0.7 0.7)
