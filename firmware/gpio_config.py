@@ -43,11 +43,23 @@ GPIO_OE_ADDR = const(0xD0000020)
 GPIO_OE_SET_ADDR = const(0xD0000024)
 GPIO_OE_CLEAR_ADDR = const(0xD0000028)
 
+# Pins 0-4,6,8 are unused
+UNUSED_PINS = (0, 1, 2, 3, 4, 6, 8)
+# Two spare pins 26 and 27
+SPARE_PINS = (26, 27)
+
+PULL_NONE = 0 # not in Pin
+# pull-up and pull-down resistors are 50-80KΩ.
+# board has 200Ω series resistors on 30V inputs
+# with diode clamps to 3.3V.
 
 def initialize_pins():
-    # Set all the GPIO pins to inputs with pull-up resistors.
+    # Set all the GPIO pins to inputs with pull-down resistors.
     for pin in range(26):
-        Pin(pin, Pin.IN, 0)
+        Pin(pin, Pin.IN, Pin.PULL_DOWN)
+
+    for pin in SPARE_PINS:
+        Pin(pin, Pin.OUT, value=0)
 
     # Set the piezo buzzer pins to outputs.
     Pin(PIN_BUZZER1, Pin.OUT).value(0)

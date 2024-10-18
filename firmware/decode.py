@@ -9,6 +9,8 @@ from micropython import const
 import array
 from pwm import enable_pwm
 
+DEBUG = const(False)  # set to True to print results
+
 # Delay in microseconds to wait after a digit line goes high before reading the GPIO pin states.
 # Digit lines are high for 600us, then low for 4ms.
 _EDGE_DELAY_US = const(200)
@@ -235,14 +237,20 @@ def has_continuity(value: float, specials: set):
     return value <= CONTINUITY_THRESHOLD
 
 
+last_result = ""
+
 def print_result(value, specials: set, cont: bool):
     """For debug purposes, print the decoded value and specials."""
+    global last_result
     if "OVER" in specials:
-        print(f"OVER {format_specials(specials)}")
+        result = f"OVER {format_specials(specials)}"
     elif "ERROR" in specials:
-        print(f"ERROR {value}")
+        result = f"ERROR {value}"
     else:
-        print(f"{value:5f} {format_specials(specials)}{' *' if cont else ''}")
+        result = f"{value:5f} {format_specials(specials)}{' *' if cont else ''}"
+    if result != last_result:
+        print(result)
+        last_result = result
 
 
 # gpio_values = None
@@ -260,4 +268,5 @@ def main_loop():
     for value, specials in read_all_digit_gpios(gpio_values, digits, specials):
         cont = has_continuity(value, specials)
         enable_pwm(cont)
-        # print_result(value, specials, cont)
+        if DEBUG:
+            print_result(value, specials, cont)
